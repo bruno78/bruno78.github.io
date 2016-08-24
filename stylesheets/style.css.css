@@ -1,5 +1,5 @@
 body {
-  padding-top: 70px;
+  padding-top: 10px;
   background-color: #fff; }
 
 a {
@@ -16,10 +16,22 @@ ul {
     font-family: 'Playfair Display';
     font-size: 20px;
     letter-spacing: 1.5px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    margin-bottom: 3px; }
 
 b, strong {
   color: black; }
+
+.navbar {
+  margin-bottom: 10px; }
+
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent; }
+  .navbar-inverse .navbar-nav > li > a:hover {
+    transition: all 0.2s ease-in-out;
+    color: #f83265;
+    text-decoration: none; }
 
 .title {
   border-top: 1px solid black;
@@ -27,10 +39,10 @@ b, strong {
   .title h1 {
     font-family: 'Playfair Display';
     text-align: center;
-    font-size: 70px; }
+    font-size: 65px; }
 
 header {
-  margin-bottom: 3em; }
+  margin-bottom: 2em; }
 
 .cover {
   width: 430px;
@@ -42,13 +54,18 @@ header {
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 20pt;
-  margin-top: 15px;
   display: block;
   position: relative;
   text-align: center;
   z-index: 1;
-  background: #fff;
-  padding-bottom: 15px; }
+  background: #fff; }
+
+.more-projects {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  font-family: 'Playfair Display';
+  font-style: italic; }
 
 .hello {
   border-right: 1px solid #d6cfcf; }
