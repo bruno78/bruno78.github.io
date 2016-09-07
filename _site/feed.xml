@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bruno G. Tavares's home page</title>
-    <description>Bruno G. Tavares's page
+    <description>My projects page
 </description>
     <link>http://127.0.0.1:4000//</link>
     <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 07 Sep 2016 01:48:55 -0400</pubDate>
-    <lastBuildDate>Wed, 07 Sep 2016 01:48:55 -0400</lastBuildDate>
+    <pubDate>Wed, 07 Sep 2016 14:06:35 -0400</pubDate>
+    <lastBuildDate>Wed, 07 Sep 2016 14:06:35 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
