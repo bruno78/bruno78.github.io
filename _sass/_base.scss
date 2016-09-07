@@ -8,10 +8,14 @@ body {
 }
 
 a { color: #646464; }
-a:hover,
-a:focus {
+a:hover {
   transition: all 0.2s ease-in-out;
   color: #f83265;
+  text-decoration: none;
+  outline: none;
+}
+a:focus {
+  color: #646464;
   text-decoration: none;
   outline: none;
 }
@@ -53,9 +57,12 @@ b, strong {
     border-color: #fff;
 }
 
-.navbar-inverse .navbar-toggle:focus,
 .navbar-inverse .navbar-toggle:hover {
     background-color: #9d9d9d;
+}
+
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #fff;
 }
 
 .mobile-profile {
