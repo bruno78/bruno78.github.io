@@ -72,20 +72,20 @@
   <p class="lead-contact"> <span>drop me a <span class="redish">note</span></span></p>
 
 
-  <form action="https://getsimpleform.com/messages?form_api_token=a27c296606d9e1ee02fa28d7410c1504." method="POST">
+  <form method="POST" action="http://formspree.io/me@brunogtavares.com">
+
+    <div class="hidden">
+      <input type='hidden' name='redirect_to' value='<"/thankyou.html"'>
+    </div>
 
     <div class="form-group floating-label-form-group controls">
       <input type="text" name="name" class="form-control" id="name" placeholder="name">
     </div>
-
     <div class="form-group floating-label-form-group controls">
       <input type="email" name="_replyto" class="form-control" id="email" placeholder="email address">
     </div>
-
-    <div class="form-group floating-label-form-group controls" id="form-body" >
-      <input type='hidden' name='redirect_to' value='<http://brunogtavares.com/thank-you.html>' />
-
-      <input type="text" name="_replyto" class="form-control" id="message" placeholder="message">
+    <div class="form-group floating-label-form-group controls" id="form-body">
+      <input type="message" name="_replyto" class="form-control" id="message" placeholder="message">
     </div>
 
     <div class="hidden">
