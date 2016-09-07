@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Bruno G. Tavares">
+  <meta name="description" content="Bruno's personal projects' page">
+  <meta name="keywords" content="web development, data science, ruby, python, javaScript, reactjs, r, data analysis, statistics">
+
+  <title>Bruno G. Tavares</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,900,900i|Muli:400,400i" rel="stylesheet" type='text/css'>
+  <link type="text/css" rel="stylesheet" href="/assets/main.css">
+
+</head>
+
+	<body>
+
+		<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                   <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/projects.html">Projects</a>
+                </li>
+                <li>
+                  <a href="/blog.html">blog</a>
+                </li>
+                <li>
+                  <a href="https://bgtavares.herokuapp.com/contacts">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- END OF NAVIGATION -->
+
+
+    <header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 title">
+        <h1>Projects</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4 hello">
+      <h4 class="lead">
+        <span><span class="redish">Programming</span></span>
+      </h4>
+      
+      
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-19">Pinboard - A Clone of the Famous Pinterest</a></h3>
+          <p><p>This is a Pinterest-like application where users are able to post images and others are able to vote.</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-19" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Pinboard - A Clone of the Famous Pinterest</h2>
+      </div>
+      <div class="modal-body">
+        <p>This is a Pinterest-like application where users are able to post images and others are able to vote.
+<!-- excerpt --></p>
+
+<p>Even though I had already learned how to implement a picture uploader by googling and using Carrierwave gem when creating Rails blogs, I wanted to see how Mackenzie Child implemented picture uploader. I learned he used Paperclip gem, which is simpler than Carrierwave and perfect for this project as the pictures didn’t require as much customization. I also learned how to use masonry-rails gem, which is a helpful gem to apply transitions and other jquery functions throughout the application.</p>
+
+<p>In doing this project, I finally started to see that there are common patterns in creating apps: from the planning stage to feature implementation and MVC development. Realizing that, has helped me to better organize my thoughts when working on new apps. It is also easier now for me to find solutions for issues that arise when working on an applicaiton. Plus, the tutorial has helped me to know which questions to even ask when searching for answers on Stack Overflow and other forums.</p>
+
+<h3 id="adding-features">Adding Features</h3>
+
+<ol>
+  <li>Create a git branch with the name of that feature</li>
+  <li>Add the gem or generate any models needed for the feature</li>
+  <li>Read the documentation of the gem and/or update the database</li>
+  <li>Generate any controllers needed</li>
+  <li>Add your URLs</li>
+  <li>Fill in your models</li>
+  <li>Fill in your controllers and views</li>
+  <li>Finish the feature, save, and merge with master branch</li>
+  <li>Think of new feature and start from step 1 again</li>
+</ol>
+
+<p>From watching this tutorial and comparing it to what I knew prior, I’ve come to realize that I am on a search for learning best practices in Rails.</p>
+
+<p>For github repo:
+<a href="https://github.com/bruno78/12-apps-03-pinboard">https://github.com/bruno78/12-apps-03-pinboard</a></p>
+
+<p>The Mackenzie Child tutorial video:</p>
+
+<p><a href="https://www.youtube.com/watch?v=abcnfFS_DS8&amp;list=PL23ZvcdS3XPLNdRYB_QyomQsShx59tpc-&amp;index=4">Pinboard</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Pinboard - A Clone of the Famous Pinterest by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-08-25-pinboard.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-08-25-pinboard.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-08-25-pinboard.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-08-25-pinboard.html&title=Pinboard - A Clone of the Famous Pinterest&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-18">ReactJS Single Page Application</a></h3>
+          <p><p>A Single Page Application created on ReactJs</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-18" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">ReactJS Single Page Application</h2>
+      </div>
+      <div class="modal-body">
+        <p>A Single Page Application created on ReactJs
+<!-- excerpt --></p>
+
+<p>This Single Page Application explains how ReactJS works in general. It also explains how well it works with webpack, which not only bundles files together but automatically updates changes in the application without having to restart the server.</p>
+
+<p>The code can be found here:</p>
+
+<p><a href="https://github.com/bruno78/reactjs-spa">https://github.com/bruno78/reactjs-spa</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=ReactJS Single Page Application by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-08-23-reactjs-spa.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-08-23-reactjs-spa.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-08-23-reactjs-spa.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-08-23-reactjs-spa.html&title=ReactJS Single Page Application&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-16">Flask Microblog</a></h3>
+          <p><p>Microblog created using Flask</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-16" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Flask Microblog</h2>
+      </div>
+      <div class="modal-body">
+        <p>Microblog created using Flask
+<!-- excerpt --></p>
+
+<p>Flask is a simple Python framework used to build applications. Instead of using a magic word like ‘Rails’ where you type “rails news app-name” and all the structures of the application magically appear, with Flask you basically build everything from the ground up. With this tutorial, I really started to understand the concepts of MVC (Model View Controller).</p>
+
+<p>Github repo:
+<a href="https://github.com/bruno78/flask-microblog">https://github.com/bruno78/flask-microblog</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Flask Microblog by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-06-22-flask-microblog.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-06-22-flask-microblog.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-06-22-flask-microblog.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-06-22-flask-microblog.html&title=Flask Microblog&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-17">Rails Blog</a></h3>
+          <p><p>A blog created on Rails 4.2.5 full with great features</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Rails Blog</h2>
+      </div>
+      <div class="modal-body">
+        <p>A blog created on Rails 4.2.5 full with great features
+<!-- excerpt --></p>
+
+<p>Learning Process</p>
+
+<p>Most blog building tutorials out there just teach you the basic: how to create, edit, and delete posts; how to add and delete comments; how to add authorization to allow users to sign up, sign in and sign out; as well as, how to edit and delete one’s own posts and comments.</p>
+
+<p>In creating this blog, I went a bit beyond the basics, creating a blog with only one user. I wanted the posts to have the ability to render markdown content and have syntax highlighting - like posts on github. Instead of using “act_as_taggable” gem, for fun I decided to research and create my own tags. I inserted the tags on the side bar with their counts shown to the sides. Additionally, I included the method “tag-cloud” (though it’s not showing) inside of the blog app in case I later wanted to implement it on the blog. In terms of attaching an image, I wanted to be able to customize its size, yet still have the image be responsive. That led me to weigh the difference between using carrierwave and paperclip gems. I ended up using carrierwave as it gave me the flexibility I wanted. My posts can render links, videos, and images (the videos are responsive as well). I used sendgrid to handle the contact page. When a message form is completed, it is sent through sendgrid and then to my email.</p>
+
+<p>The most difficult part of building the blog was making the design decisions. Choosing a font and a style that would best represent myself was perhaps the hardest part. I wanted an aesthetic that would be both retro and contemporary, having a clean layout with touch of vibrant color.</p>
+
+<p>While I plan to continue developing the blog, making improvements along the way, I’m happy with the results so far. I hope you enjoy viewing the blog as much as I enjoyed creating it.</p>
+
+<p>About this app</p>
+
+<p>This app was built on Rails 4 and uploaded on Heroku</p>
+
+<p>It has the following features:</p>
+<ul>
+  <li>Posts</li>
+  <li>Create / Edit / Destroy</li>
+  <li>Markdown (RedCarpet)</li>
+  <li>Syntax highlighting (pygments)</li>
+  <li>Tagging and search by tags</li>
+  <li>The posts can render links, videos and images</li>
+  <li>You can adjust the heigh x width of the image and still responsive</li>
+  <li>It will display three posts per page (will_paginate)</li>
+  <li>Image uploader (carrierwave)</li>
+  <li>Responsiviness (bootstrap)</li>
+  <li>User (devise)</li>
+  <li>Contact</li>
+  <li>Contact form</li>
+  <li>Sendgrid</li>
+</ul>
+
+<p>Link to the blog:</p>
+
+<p><a href="http://bgtavares.herokuapp.com">blog</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Rails Blog by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-08-19-rails-blog.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-08-19-rails-blog.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-08-19-rails-blog.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-08-19-rails-blog.html&title=Rails Blog&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-14">Getting and Cleaning Data Project</a></h3>
+          <p><p>The purpose of this project was to demonstrate the process of collecting, working with, and cleaning a data set for analysis</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-14" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Getting and Cleaning Data Project</h2>
+      </div>
+      <div class="modal-body">
+        <p>The purpose of this project was to demonstrate the process of collecting, working with, and cleaning a data set for analysis
+<!-- excerpt --></p>
+
+<p>This project was the final assignment for the Getting and Cleaning Data course that was part of the Data Science Specialization offered by John Hopkins University on Coursera. The assignment had two data sets that had to be cleaned and merged to create a tidy data set. We had to create a codebook containing all the information about the data, including its observations and variables. We also had to create a readme file containing a list of all the files, including the R script, which lists all the commands done to clean the data for reproducing the process.</p>
+
+<p>For Github repo:
+<a href="https://github.com/bruno78/Getting-Cleaning-Data-Project">https://github.com/bruno78/Getting-Cleaning-Data-Project</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Getting and Cleaning Data Project by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-05-09-tidy-data.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-05-09-tidy-data.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-05-09-tidy-data.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-05-09-tidy-data.html&title=Getting and Cleaning Data Project&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-13">Jobs Board</a></h3>
+          <p><p>A jobsboard application</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-13" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Jobs Board</h2>
+      </div>
+      <div class="modal-body">
+        <p>A jobsboard application
+<!-- excerpt --></p>
+
+<p>This app was created under the tutorial 12 web apps in 12 weeks by Mackenzie Child (@mackenziechild). This is the number 7 of the series but I’m not doing in exact order, I choose according with my curiosity and needs.</p>
+
+<p>Github repo
+<a href="https://github.com/bruno78/Getting-Cleaning-Data-Project">https://github.com/bruno78/Getting-Cleaning-Data-Project</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Jobs Board by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-02-25-jobsboard.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-02-25-jobsboard.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-02-25-jobsboard.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-02-25-jobsboard.html&title=Jobs Board&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-15">Pong</a></h3>
+          <p><p>A classic arcade game coded in Python</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-15" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Pong</h2>
+      </div>
+      <div class="modal-body">
+        <p>A classic arcade game coded in Python
+<!-- excerpt --></p>
+
+<p>This classic 1972 arcade game was the final project for the course “An Introduction to Interactive Programming in Python (Part 1)” by Rice University offered on Coursera. With this project we practiced the principles of Event Driven Programming Model where you write a program that initializes and then waits for an event to occur. When the event occurs, the program accesses a function that handles the event. The program’s response to the event is called a “handler”. Then once the “handler” response is complete, the program waits again.</p>
+
+<p>The game was coded in Python 2 and developed on a simple GUI called CodeSkulptor which is a browser-based Python interpreter created by Professor Scott Rixner. The interpreter allows a person to play the game on various web browsers.</p>
+
+<p>If you want to see the code on Github:
+<a href="https://github.com/bruno78/pong.git">https://github.com/bruno78/pong.git</a></p>
+
+<p>If you want to play the game*:
+<a href="http://www.codeskulptor.org/#user41_VoGZTf5hOe7otdE.py">http://www.codeskulptor.org/#user41_VoGZTf5hOe7otdE.py</a></p>
+
+<p>(*) Once CodeSkulptor opens don’t forget to push the play button on the top left of the screen, invite a friend and play the game together. The left player uses “w” and “s” on keyboard  and right player pushes “up” and “down” keyboard arrows.</p>
+
+<p>** <em>This course was completed in May 2016</em> **</p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Pong by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-05-12-pong.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-05-12-pong.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-05-12-pong.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-05-12-pong.html&title=Pong&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-12">Recipe Finder</a></h3>
+          <p><p>This is a Recipe Finder App using Ruby on Rails and Food2Fork API.</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-12" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Recipe Finder</h2>
+      </div>
+      <div class="modal-body">
+        <p>This is a Recipe Finder App using Ruby on Rails and Food2Fork API.
+<!-- excerpt --></p>
+
+<p>This was the final assignment for the Intro to Rails class offered by John Hopkins University on Coursera</p>
+
+<p>The goal of this assignment was to create an app using the Food2Fork API to pass and display data and to search for recipes.</p>
+
+<p>Github repo:
+<a href="https://github.com/bruno78/recipefinder">https://github.com/bruno78/recipefinder</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Recipe Finder by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-01-19-recipefinder.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-01-19-recipefinder.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-01-19-recipefinder.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-01-19-recipefinder.html&title=Recipe Finder&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-11">Raddit App</a></h3>
+          <p><p>A Clone of the famous Reddit</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-11" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Raddit App</h2>
+      </div>
+      <div class="modal-body">
+        <p>A Clone of the famous Reddit
+<!-- excerpt --></p>
+
+<p>Prior to doing this tutorial, I tended to spend too much time focused on coding and learning how a particular app worked, rather then creating an overall plan as to how best to approach the project in general.</p>
+
+<p>This tutorial showed me how implementing best programming practices at the beginning of a project is similar to learning how to pay music to its fullest. One not only has to be able to play each note with technical precision, but also has to equally understand the importance of the rests (silences) between the notes. And so with coding, like playing music, this tutorial taught me that you have to begin with a clear and concise outline of the goals. Music is not just a series of notes but is also the silences between. Likewise, being able to code alone, is not enough. Building a program, requires creating an overall plan before beginning to program.</p>
+
+<p>Ultimately, this project taught me how to think through the functionalities of an application first, putting my thoughts on to paper, before beginning to program. I’ve also found that having a clear outline makes it easier to choose the right gems for the application.</p>
+
+<p>My Github repo:
+<a href="https://github.com/bruno78/12-apps-01-raddit">https://github.com/bruno78/12-apps-01-raddit</a></p>
+
+<p>Mackenzie Child Tutorial:
+<a href="https://www.youtube.com/watch?v=7-1HCWbu7iU&amp;index=1&amp;list=PL23ZvcdS3XPLNdRYB_QyomQsShx59tpc-">Tutorial</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Raddit App by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-01-12-raddit.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-01-12-raddit.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-01-12-raddit.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-01-12-raddit.html&title=Raddit App&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-10">Event Manager</a></h3>
+          <p><p>A Ruby program that uses a mailing list to create e-mails to your local representative</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Event Manager</h2>
+      </div>
+      <div class="modal-body">
+        <p>A Ruby program that uses a mailing list to create e-mails to your local representative
+<!-- excerpt --></p>
+
+<p>This program is from the Jumpstart Lab’s Event Manager Tutorial. It is a Ruby program that reads a CSV file containing names, addresses, and emails of people who have signed up for a mailing list. The program parses the CSV Files, sending the zip codes to Sunlight’s Congressional API (gem). The API returns the data identifying each persons local representative. The program then generates individual emails with messages asking each person to contact their local respective regarding a particular subject matter. The templates were created using ERB.</p>
+
+<p>Github repo:</p>
+
+<p><a href="https://github.com/bruno78/event_manager">https://github.com/bruno78/event_manager</a></p>
+
+<p>Event Manager tutorial that can be found at:</p>
+
+<p><a href="http://tutorials.jumpstartlab.com/projects/eventmanager.html#eventmanager">jumpstart lab</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Event Manager by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2015-08-22-event-manager.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2015-08-22-event-manager.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2015-08-22-event-manager.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2015-08-22-event-manager.html&title=Event Manager&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+    <div class="col-md-4 hello">
+      <h4 class="lead">
+        <span>Visual</span>
+      </h4>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-9">Wedding</a></h3>
+          <p><p>Edited Event Video</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-9" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Wedding</h2>
+      </div>
+      <div class="modal-body">
+        <p>Edited Event Video
+<!-- excerpt --></p>
+
+<p>The footage for this video was shot by my client in Super 8 film and later digitized. I then edited the footage on Adobe Premier Pro. The digitized film was problematic as it consisted mainly of short cuts that were blurry. I’ve found that a certain amount of blurriness is often present when dealing with digitized analog film. That said, with my careful editing, the final product perfectly expressed the beautiful setting and mood of the day. This video was given as a wedding gift by my client to his recently married friends.</p>
+
+<div class="video">
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/tpGxecg5f_k" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Wedding by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2014-05-28-wedding.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2014-05-28-wedding.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2014-05-28-wedding.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2014-05-28-wedding.html&title=Wedding&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-4">Rebecca Taylor Spring 2013</a></h3>
+          <p><p>Filmed and Edited Fashion Show PR Video</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Rebecca Taylor Spring 2013</h2>
+      </div>
+      <div class="modal-body">
+        <p>Filmed and Edited Fashion Show PR Video
+<!-- excerpt --></p>
+
+<p>This video includes both HD digital photo stills and Super 8 color film converted to digital. The filming was executed with Tim Kitchen, the art director of Rebecca Taylor (RT). The idea was to make a fun, light, and fast-paced video, highlighting the week’s work leading up to, and including, the fashion show. The editing modulates back-and-forth between the Super 8 color film and the stop-motion color stills, tightly linking all to the rhythm of the music. The video tells the story of the madcap, backstage preparations for the show, culminating in the final polished production. The video was featured on the RT website.</p>
+
+<div class="video">
+  <iframe src="https://player.vimeo.com/video/59616063" width="100%" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Rebecca Taylor Spring 2013 by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2012-09-05-Rebecca-Taylor-Spring.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2012-09-05-Rebecca-Taylor-Spring.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2012-09-05-Rebecca-Taylor-Spring.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2012-09-05-Rebecca-Taylor-Spring.html&title=Rebecca Taylor Spring 2013&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-3">Rebecca Taylor Fall 2012</a></h3>
+          <p><p>Filmed and Edited Fashion Show PR Videos</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Rebecca Taylor Fall 2012</h2>
+      </div>
+      <div class="modal-body">
+        <p>Filmed and Edited Fashion Show PR Videos
+<!-- excerpt --></p>
+
+<p>These videos include digital video footage, digital stills, and Super 8 black and white film converted to digital. I filmed the Super 8 footage with Tim Kitchen, the art director of Rebecca Taylor (RT). I then edited all the footage and stills using Adobe Premier Pro. The video shows a progression from the sewing, making, and fitting of the garments, to the last minute backstage preparation with all the models and stylists. I created two versions of this video, a short-cut for the RT website and a long-cut for the RT store monitors.</p>
+
+<p>Webcut version:</p>
+
+<div class="video">
+  <iframe src="https://player.vimeo.com/video/44549164" width="100%" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+<p>Store version:</p>
+
+<div class="video">
+  <iframe src="https://player.vimeo.com/video/43427936" width="100%" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Rebecca Taylor Fall 2012 by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2012-02-10-Rebecca-Taylor-Fall.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2012-02-10-Rebecca-Taylor-Fall.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2012-02-10-Rebecca-Taylor-Fall.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2012-02-10-Rebecca-Taylor-Fall.html&title=Rebecca Taylor Fall 2012&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-2">Façade/Fasad Stop-Motion Sq. Dance</a></h3>
+          <p><p>Composed Soundtrack for Architectural PR Video</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Façade/Fasad Stop-Motion Sq. Dance</h2>
+      </div>
+      <div class="modal-body">
+        <p>Composed Soundtrack for Architectural PR Video
+<!-- excerpt --></p>
+
+<p>I composed the square dance style soundtrack for this stop-motion video. The video features the multimode architecture and furniture designed by Art_Bridge Architecture for Facade/Fasad, a live/work/show space in Brooklyn. The video was distributed as both a PR document for the project and as a playful seasons greetings message from the firm. The below video link is from the firm’s Vimeo page.</p>
+
+<div class="video">
+  <iframe src="https://player.vimeo.com/video/33870697" width="100%" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Façade/Fasad Stop-Motion Sq. Dance by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2011-12-18-FF-Sq-Dance-Promo.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2011-12-18-FF-Sq-Dance-Promo.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2011-12-18-FF-Sq-Dance-Promo.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2011-12-18-FF-Sq-Dance-Promo.html&title=Façade/Fasad Stop-Motion Sq. Dance&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-1">Maybe the Welders - Hot Shot Music Video</a></h3>
+          <p><p>Filmed, Directed, and Edited Music Video</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Maybe the Welders - Hot Shot Music Video</h2>
+      </div>
+      <div class="modal-body">
+        <p>Filmed, Directed, and Edited Music Video
+<!-- excerpt --></p>
+
+<p>I made this music video for my former band, MTW. It was my first video “job” after film school and is a homage to Joy Division’s “Love Will Tear Us Apart Again”. Our schedules were tight as we all had day jobs and so I decided to simply collect all the low-fi footage from our various recordings and rehearsals, plus a showcase performance, and edit it all together. The low-fi quality of the footage lent itself well to the early 80s video aesthetic goal.</p>
+
+<div class="video">
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/4_IDAKGNAew" frameborder="0" allowfullscreen=""></iframe>
+</div>
+
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Maybe the Welders - Hot Shot Music Video by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2008-05-10-mtw-hot-shot.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2008-05-10-mtw-hot-shot.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2008-05-10-mtw-hot-shot.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2008-05-10-mtw-hot-shot.html&title=Maybe the Welders - Hot Shot Music Video&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+    </div>
+    <div class="col-md-4 sound">
+      <h4 class="lead">
+        <span><span class="redish">Sound</span></span>
+      </h4>
+      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-8">764 Madison Avenue NYC Project Tour</a></h3>
+          <p><p>Composed Soundscape for Architectural PR Video</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">764 Madison Avenue NYC Project Tour</h2>
+      </div>
+      <div class="modal-body">
+        <p>Composed Soundscape for Architectural PR Video
+<!-- excerpt --></p>
+
+<p>I composed the soundscape for this video by Art_Bridge Architecture PLLC featuring their lobby/corridor renovation at 764 Madison Avenue NYC. The video highlights the lobbies contemporary ‘art gallery’ aesthetic, featuring their site specific painting that runs throughout the stairwell. The soundtrack was composed of five layers of sounds, each given a fixed interval length and then allowed to overlap the other sounds at random. The sounds represent the various passersby as they travel up and down the stairs and corridors, passing each other along their various routes. This video is featured on the firm’s Vimeo page.</p>
+
+<div class="video">
+  <iframe src="https://player.vimeo.com/video/72449541" width="100%" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=764 Madison Avenue NYC Project Tour by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2013-08-15-764-madison-ave.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2013-08-15-764-madison-ave.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2013-08-15-764-madison-ave.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2013-08-15-764-madison-ave.html&title=764 Madison Avenue NYC Project Tour&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-7">Façade/Fasad Multimode Bench</a></h3>
+          <p><p>Composed Music for Architectural PR Video</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Façade/Fasad Multimode Bench</h2>
+      </div>
+      <div class="modal-body">
+        <p>Composed Music for Architectural PR Video
+<!-- excerpt --></p>
+
+<p>I composed the music for this stop-motion video-short by Art_Bridge Architecture PLLC featuring the multimode bench designed for Facade/Fasad, a live/work/show space in Brooklyn. The below video link is from the firm’s Vimeo page.</p>
+
+<div class="video">
+  <iframe src="https://player.vimeo.com/video/62135288" width="100%" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Façade/Fasad Multimode Bench by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2013-03-19-FF-MM-bench.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2013-03-19-FF-MM-bench.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2013-03-19-FF-MM-bench.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2013-03-19-FF-MM-bench.html&title=Façade/Fasad Multimode Bench&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-6">Façade/Fasad Multimode Fold-Wall</a></h3>
+          <p><p>Composed Music for Architectural PR Video</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Façade/Fasad Multimode Fold-Wall</h2>
+      </div>
+      <div class="modal-body">
+        <p>Composed Music for Architectural PR Video
+<!-- excerpt --></p>
+
+<p>I composed the music for this stop-motion video-short by Art_Bridge Architecture PLLC featuring the main multimode room and furniture designed for Facade/Fasad, a live/work/show space in Brooklyn. The below video link is from the firm’s Vimeo page.</p>
+
+<div class="video">
+  <iframe src="https://player.vimeo.com/video/62134633" width="100%" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Façade/Fasad Multimode Fold-Wall by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2013-03-18-FF-MM-Wall.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2013-03-18-FF-MM-Wall.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2013-03-18-FF-MM-Wall.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2013-03-18-FF-MM-Wall.html&title=Façade/Fasad Multimode Fold-Wall&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+      <ul>
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-5">Façade/Fasad Multimode Bedroom</a></h3>
+          <p><p>Composed Music for Architectural PR Video</p>
+
+</p>
+        </li>
+            <div class="modal fade" id="myModal-5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Façade/Fasad Multimode Bedroom</h2>
+      </div>
+      <div class="modal-body">
+        <p>Composed Music for Architectural PR Video
+<!-- excerpt --></p>
+
+<p>I composed the music for this stop-motion video-short featuring the multimode bedroom furniture designed by Art_Bridge Architecture PLLC for Facade/Fasad, a live/work/show space in Brooklyn. The below video link is from the firm’s Vimeo page.</p>
+
+<div class="video">
+  <iframe src="https://player.vimeo.com/video/62133363" width="100%" height="360" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share this project</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Façade/Fasad Multimode Bedroom by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2013-03-18-FF-MM-Bedroom.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2013-03-18-FF-MM-Bedroom.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2013-03-18-FF-MM-Bedroom.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2013-03-18-FF-MM-Bedroom.html&title=Façade/Fasad Multimode Bedroom&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+      </ul>
+          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>
+  </div>
+</div>
+
+
+
+    <footer>
+  <div class="containe find-me">
+    <div class="row">
+      <div class="col-md-12">
+        <p> &copy 2016 by Bruno G. Tavares. All rights reserved. </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+		<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

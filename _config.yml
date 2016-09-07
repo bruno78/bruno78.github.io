@@ -1,0 +1,18 @@
+title: Bruno G. Tavares's home page
+email: bgtavares@gmail.com
+description: >
+  My projects page
+baseurl: ""
+url: "http://127.0.0.1:4000/"
+# Build Settings
+
+collections:
+  projects:
+    output: true
+    
+gems:
+  - jekyll-assets
+
+markdown: kramdown
+kramdown:
+  input: GFM

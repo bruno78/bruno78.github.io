@@ -1,0 +1,47 @@
+---
+layout: default
+---
+
+
+
+<!-- Each Post -->
+<div class="container">
+  <div class="row post-width">
+   {% include _sidebar.html %}
+    <!-- Blog Post -->
+   <div class="col-md-8 col-sm-12 col-xs-12 posts-font" id="left-border">
+
+     <p class="date"><span>{{ page.date | date: "%B %d, %Y" }}</span></p>
+     <!-- <span class="glyphicon glyphicon-time"></span> post.created_at.strftime("%B %d, %Y") -->
+     <h2 id="post-title">
+       {{ page.title }}
+     </h2>
+     <p class="lead">
+       <span>by Bruno G. Tavares</span>
+     </p>
+      <!-- Author/tags -->
+      <p class="lead-tag" align='center'>
+        {{ page.tags | array_to_sentence_string }}
+      </p>
+
+     <br>
+
+      <!-- Preview Image -->
+      {% if page.image %}
+       <img src="{{page.image}}" class: "img-responsive"/>
+       <br>
+      {% endif %}
+      <!-- Post Content -->
+      <p id="blurb"><{{ page.blurb }}></p>
+
+      {{ content }}<br>
+
+     <hr>
+
+      <!-- Share Project -->
+      {% include _share_me.html %}
+      </div>
+   </div>
+
+  </div>
+</div>

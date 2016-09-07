@@ -1,0 +1,27 @@
+.blog {
+  padding-left: 30px; //77px
+  padding-right: 330px;
+  .sidebar-style {
+    top: 220px;
+  }
+  .posts-font {
+    float: right;
+  }
+}
+
+@media (max-width: 1199px){
+  .blog {
+    padding-left: 20px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 991px){
+  .blog {
+    padding-left: 50px;
+    padding-right: 50px;
+    .sidebar-style {
+      top: 17px;
+    }
+  }
+}

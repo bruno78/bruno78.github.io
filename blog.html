@@ -1,0 +1,28 @@
+---
+layout: page
+title: Blog
+---
+<div class="container blog">
+  <div class="row">
+    {% include _sidebar.html %}
+    <!-- The posts goes on the main page -->
+    <div class="col-md-8 col-sm-12 posts-font">
+      {% for post in site.posts %}
+        <p class="date"><span>{{ post.date | date: "%B %d, %Y" }}</span></p>
+        <h2 id="post-title">
+            <a href="{{ post.url }}">{{ post.title }}</a></li>
+        </h2>
+        <p class="lead">
+          <span>by <a href="/"> Bruno G. Tavares</a></span>
+        </p>
+        <p id="front-blurb">{{ post.blurb }}</p>
+        <p class="line" ><a href="{{ post.url }}" class="read-more">More</a></p>
+
+        <br>
+      {% endfor %}
+    </div>
+    </div>
+
+  </div>
+
+</div>

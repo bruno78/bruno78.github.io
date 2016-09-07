@@ -1,0 +1,46 @@
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display';
+  font-weight: 900;
+}
+a, p {
+  overflow-wrap: break-word;
+}
+.modal-body {
+  font-family: 'Muli';
+  ul {
+    list-style-type: circle;
+  }
+}
+
+.share-me {
+  width: 100%;
+  text-align: center;
+  p, i {
+    margin-left: 5pt;
+    margin-right: 5pt;
+  }
+  i {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #646464;
+  }
+  i:hover {
+    transition: all 0.2s ease-in-out;
+    color: #f83265;
+    text-decoration: none;
+  }
+}
+
+@media (max-width: 992px){
+  .modal-header {
+    text-align: center;
+  }
+  .modal-body {
+    text-align: justify;
+    ul {
+      padding-left: 30px;
+      text-align: justify;
+    }
+  }
+}

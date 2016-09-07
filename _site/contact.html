@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Bruno G. Tavares">
+  <meta name="description" content="Bruno's personal projects' page">
+  <meta name="keywords" content="web development, data science, ruby, python, javaScript, reactjs, r, data analysis, statistics">
+
+  <title>Bruno G. Tavares</title>
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=News+Cycle' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,900,900i|Muli:400,400i" rel="stylesheet" type='text/css'>
+  <link type="text/css" rel="stylesheet" href="/assets/main.css">
+
+</head>
+
+	<body>
+
+		<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                   <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/projects.html">Projects</a>
+                </li>
+                <li>
+                  <a href="/blog.html">blog</a>
+                </li>
+                <li>
+                  <a href="https://bgtavares.herokuapp.com/contacts">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- END OF NAVIGATION -->
+
+
+    <header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 title">
+        <h1>Contact Me</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+ <div class="contact-page">
+  <p class="lead-contact"> <span>drop me a <span class="redish">note</span></span></p>
+
+  <%= form_for @contact do |f| %>
+
+    <div class="form-group floating-label-form-group controls">
+      <%= f.label :name %>
+      <%= f.text_field :name, required: true, class: "form-control", id: "name", placeholder: "Name" %>
+    </div>
+
+    <div class="form-group floating-label-form-group controls">
+      <%= f.label :email %>
+      <%= f.email_field :email, required: true, class: "form-control", id: "email", placeholder: "Email Address" %>
+    </div>
+
+    <div class="form-group floating-label-form-group controls" id="form-body" >
+      <%= f.label :message %>
+      <%= f.text_area :message, as: :text, class: "form-control", id: "message", placeholder:"Message" %>
+    </div>
+
+    <div class="hidden">
+      <%= f.label :nickname %>
+      <%= f.text_field :nickname, hint: 'leave this field blank', class: "hidden" %>
+    </div>
+
+    <div class="form-group line">
+      <%= f.submit "Send", class: "contact-send" %>
+    </div>
+  <% end %>
+
+</div>
+
+
+
+    <footer>
+  <div class="containe find-me">
+    <div class="row">
+      <div class="col-md-12">
+        <p> &copy 2016 by Bruno G. Tavares. All rights reserved. </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+		<script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
