@@ -10,6 +10,10 @@ collections:
   projects:
     output: true
 
+sources:
+  - _assets/css
+  - _assets/javascripts
+  
 gems:
   - jekyll-assets
 
