@@ -6,7 +6,7 @@ title: Blog
   <div class="row">
     {% include _sidebar.html %}
     <!-- The posts goes on the main page -->
-    <div class="col-md-8 col-sm-12 posts-font">
+    <div class="col-md-8 col-sm-12 col-xs-12 posts-font">
       {% for post in site.posts %}
         <p class="date"><span>{{ post.date | date: "%B %d, %Y" }}</span></p>
         <h2 id="post-title">

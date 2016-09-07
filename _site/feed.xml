@@ -6,132 +6,9 @@
 </description>
     <link>http://127.0.0.1:4000//</link>
     <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 06 Sep 2016 20:27:55 -0400</pubDate>
-    <lastBuildDate>Tue, 06 Sep 2016 20:27:55 -0400</lastBuildDate>
+    <pubDate>Tue, 06 Sep 2016 23:59:18 -0400</pubDate>
+    <lastBuildDate>Tue, 06 Sep 2016 23:59:18 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
-    
-      <item>
-        <title>vimeo video</title>
-        <description>
-&lt;div class=&quot;video&quot;&gt;
-  &lt;iframe src=&quot;https://player.vimeo.com/video/62135288&quot; width=&quot;100%&quot; height=&quot;360&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;video&quot;&gt;
-  &lt;iframe width=&quot;100%&quot; height=&quot;400&quot; src=&quot;https://www.youtube.com/embed/4_IDAKGNAew&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-</description>
-        <pubDate>Thu, 11 Aug 2016 00:00:00 -0400</pubDate>
-        <link>http://127.0.0.1:4000//2016/08/11/testing.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/08/11/testing.html</guid>
-        
-        <category>multi-user</category>
-        
-        <category>Rails</category>
-        
-        <category>Ruby</category>
-        
-        <category>Jobsboard</category>
-        
-        <category>tutorial</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Jobs board with multi-user</title>
-        <description>&lt;p&gt;Most job tutorials out there only teaches the very basics like how to set up a model, post jobs, apply for jobs, user sign up, sign in and sign out, leaving out the crucial fun: how to create user with different roles. I’ve looked into the Devise - Cancan - Rolify tutorial and for some reason it wasn’t very clear because most of these tutorials are focused on Administrator, Moderator and User/author sort of roles or roles assign by administrator or assigned in the console or a many-to-many relationship. I’m still learning Rails by myself and sometimes even posting questions on Stack Overflow is not very helpful. So some methods suggested to create a table with Roles… but when you deploy the app, would these roles would have to be assigned again since the database would be cleared. The closest approach was The RailsCasts on &lt;a href=&quot;http://railscasts.com/episodes/189-embedded-association&quot;&gt;Embedded Associations&lt;/a&gt; but the video was from 2009 and I was using devise gem which works a bit different than following the formula. So everything was fine but upon sign up where I have a form to assign the role to the user but unfortunately when I look at the user role it was either nil or the default value… Frustrating…&lt;/p&gt;
-
-&lt;p&gt;Anyways, in this tutorial I’ll explain how to assign different roles upon sign-up where users will choose between “job-hunters” which will be able to apply for jobs and have profiles, and companies which will be able to post jobs and contact users. If you haven’t created the jobs-board app you can get my repo here (…) or watch Mackenzie Child Tutorial here (…).&lt;/p&gt;
-
-&lt;p&gt;Once you have the devise gem installed and you are all set, ready to sign up your first user, let’s add another gem, Enumerize. Open your Gemfile file and add this:&lt;/p&gt;
-
-&lt;p&gt;Gemfile&lt;/p&gt;
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'enumerize'&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;on bash type:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle install
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Then add a role column to your User model:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rails g migration add_role_to_users role:string
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Update the database:&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;rake db:migrate
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;At app/model/user.rb, add the enumerize and roles:&lt;/p&gt;
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActiveRecord&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# Include default devise modules. Others available are:&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# :confirmable, :lockable, :timeoutable and :omniauthable&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;devise&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:database_authenticatable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:registerable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-         &lt;span class=&quot;ss&quot;&gt;:recoverable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:rememberable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:trackable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:validatable&lt;/span&gt;
-  &lt;span class=&quot;kp&quot;&gt;extend&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Enumerize&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;enumerize&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:role&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;in: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:job&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hunter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:company&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;default: :job&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;hunter&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Up to this point all the newly created users will have the job-hunter role as default. We will create the option to change at the sign up form where, if you are using devise, you can add this line &amp;lt;%= f.select :role, User.role.options %&amp;gt; at
-views/devise/registrations/new.html.erb&lt;/p&gt;
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;h2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Sign&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;up&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/h2&amp;gt;
-
-&amp;lt;%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %&amp;gt;
-  &amp;lt;%= f.error_notification %&amp;gt;
-
-  &amp;lt;div class=&quot;form-inputs&quot;&amp;gt;
-    &amp;lt;%= f.input :email, required: true, autofocus: true %&amp;gt;
-    &amp;lt;%= f.input :password, required: true, hint: (&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;vi&quot;&gt;@minimum_password_length&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt; characters minimum&quot; if @minimum_password_length) %&amp;gt;
-    &amp;lt;%= f.input :password_confirmation, required: true %&amp;gt;
-    &amp;lt;%= f.select :role, User.role.options %&amp;gt;
-  &amp;lt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;div&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-
-  &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;div&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;form-actions&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;sx&quot;&gt;%= f.button :submit, &quot;Sign up&quot; %&amp;gt;
-  &amp;lt;/div&amp;gt;
-&amp;lt;% end %&amp;gt;
-
-&amp;lt;%=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;devise/shared/links&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Now the missing key for me is here, the only way the changes would be permanent if you add the new key to permissions. I knew that but since we didn’t have UserController file because devise takes care of that for us, I didn’t know where to do it. It’s on the devise documentation but for a beginner like me it wasn’t obvious…&lt;/p&gt;
-
-&lt;p&gt;app/controllers/application_controller.rb&lt;/p&gt;
-&lt;div class=&quot;language-ruby highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;ApplicationController&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;ActionController&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;Base&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# Prevent CSRF attacks by raising an exception.&lt;/span&gt;
-  &lt;span class=&quot;c1&quot;&gt;# For APIs, you may want to use :null_session instead.&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;protect_from_forgery&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;with: :exception&lt;/span&gt;
-
-  &lt;span class=&quot;n&quot;&gt;before_action&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:configure_devise_permitted_parameters&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;if: :devise_controller?&lt;/span&gt;
-
-  &lt;span class=&quot;kp&quot;&gt;protected&lt;/span&gt;
-
-  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;configure_devise_permitted_parameters&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;devise_parameter_sanitizer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;permit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:sign_up&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;keys: &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:role&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;p&gt;Once you create the method and add the key :role sign up, the changes will be permanent. Next step, set restrictions/privilege for the each roles&lt;/p&gt;
-</description>
-        <pubDate>Thu, 11 Aug 2016 00:00:00 -0400</pubDate>
-        <link>http://127.0.0.1:4000//2016/08/11/jobsboard-with-multiuser.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/08/11/jobsboard-with-multiuser.html</guid>
-        
-        <category>multi-user</category>
-        
-        <category>Rails</category>
-        
-        <category>Ruby</category>
-        
-        <category>Jobsboard</category>
-        
-        <category>tutorial</category>
-        
-        
-      </item>
     
       <item>
         <title>Hello World!</title>
@@ -141,9 +18,9 @@ views/devise/registrations/new.html.erb&lt;/p&gt;
 
 &lt;p&gt;Bruno&lt;/p&gt;
 </description>
-        <pubDate>Thu, 11 Aug 2016 00:00:00 -0400</pubDate>
-        <link>http://127.0.0.1:4000//2016/08/11/hello-world.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/08/11/hello-world.html</guid>
+        <pubDate>Tue, 06 Sep 2016 00:00:00 -0400</pubDate>
+        <link>http://127.0.0.1:4000//2016/09/06/hello-world.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/09/06/hello-world.html</guid>
         
         <category>hello world</category>
         

@@ -14,7 +14,7 @@ a:focus {
 
 ul {
   list-style-type: none;
-  padding-left: 20px; }
+  padding-left: 40px; }
   ul h3 {
     font-family: 'Playfair Display';
     font-weight: 900;
@@ -159,6 +159,9 @@ a:hover {
 
 #post-body {
   line-height: 1.8; }
+
+#blurb, .posts-font #front-blurb {
+  text-align: center; }
 
 #left-border {
   border-left: 1px solid #d6cfcf; }
@@ -442,6 +445,8 @@ a, p {
     top: 220px; }
   .blog .posts-font {
     float: right; }
+  .blog #front-blurb {
+    text-align: center; }
 
 @media (max-width: 1199px) {
   .blog {

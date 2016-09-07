@@ -10,49 +10,49 @@ title: Projects
         <span><span class="redish">Programming</span></span>
       </h4>
       {% assign sorted_projects = site.projects | sort: date | reverse %}
+      <ul>
       {% for project in sorted_projects %}
         {% if project.category == "programming" %}
-      <ul>
         <li>
           <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
           <p>{{ project.excerpt }}</p>
         </li>
             {% include modal.html %}
-      </ul>
           {% endif %}
         {% endfor %}
+      </u>
     </div>
     <div class="col-md-4 hello">
       <h4 class="lead">
         <span>Visual</span>
       </h4>
+      <ul>
       {% for project in sorted_projects %}
         {% if project.category == "visual" %}
-      <ul>
         <li>
           <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
           <p>{{ project.excerpt }}</p>
         </li>
             {% include modal.html %}
-      </ul>
           {% endif %}
         {% endfor %}
+        </ul>
     </div>
     <div class="col-md-4 sound">
       <h4 class="lead">
         <span><span class="redish">Sound</span></span>
       </h4>
+      <ul>
       {% for project in sorted_projects %}
         {% if project.category == "sound" %}
-      <ul>
         <li>
           <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
           <p>{{ project.excerpt }}</p>
         </li>
             {% include modal.html %}
-      </ul>
           {% endif %}
         {% endfor %}
+        </ul>
     </div>
   </div>
 </div>
