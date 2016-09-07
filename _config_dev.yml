@@ -1,5 +1,5 @@
 title: Bruno G. Tavares's home page
-email: bgtavares@gmail.com
+email: devbruno78@gmail.com
 description: >
   My projects page
 baseurl: ""
@@ -9,9 +9,9 @@ url: "http://127.0.0.1:4000/"
 collections:
   projects:
     output: true
-    
-gems:
-  - jekyll-assets
+
+sass:
+  sass_dir: _sass
 
 markdown: kramdown
 kramdown:

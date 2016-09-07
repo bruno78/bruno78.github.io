@@ -10,12 +10,8 @@ collections:
   projects:
     output: true
 
-sources:
-  - _assets/css
-  - _assets/javascripts
-  
-gems:
-  - jekyll-assets
+sass:
+  sass_dir: _sass
 
 markdown: kramdown
 kramdown:
