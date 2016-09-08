@@ -7,7 +7,7 @@ title: Contact
   <p class="lead-contact"> <span>drop me a <span class="redish">note</span></span></p>
 
   <div id="alert"></div>
-  <form action="/assets/submit.php" method="POST">
+  <form id="contactform" method="POST">
 
     <div class="hidden">
       <input type='hidden' name='_next' value="{{ "/thankyou.html" | prepend: site.baseurl }}">
@@ -26,8 +26,7 @@ title: Contact
     </div>
 
     <div class="hidden">
-      <!-- formspree input type="text" name="_gotcha" style='display:none' class='hidden'-->
-      <input type="text" name="url" style='display:none' class='hidden'>
+      <input type="text" name="_gotcha" style='display:none' class='hidden'>
     </div>
 
     <div class="form-group line">
