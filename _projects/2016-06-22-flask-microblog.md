@@ -17,6 +17,6 @@ Microblog created using Flask
 
 Flask is a simple Python framework used to build applications. Instead of using a magic word like 'Rails' where you type "rails news app-name" and all the structures of the application magically appear, with Flask you basically build everything from the ground up. With this tutorial, I really started to understand the concepts of MVC (Model View Controller).
 
+The code can be found here:
 
-Github repo:
 <https://github.com/bruno78/flask-microblog>

@@ -15,7 +15,8 @@ tags:
 A jobsboard application
 <!-- excerpt -->
 
-This app was created under the tutorial 12 web apps in 12 weeks by Mackenzie Child (@mackenziechild). This is the number 7 of the series but I'm not doing in exact order, I choose according with my curiosity and needs.
+This app was created under the tutorial 12 web apps in 12 weeks by Mackenzie Child (@mackenziechild). This is the 7th tutorial of the series and teaches how to create a jobs board app. I choose this tutorial out of sequence, as it related to my interests and needs at the time.
 
-Github repo
+The code can be found here:
+
 <https://github.com/bruno78/Getting-Cleaning-Data-Project>

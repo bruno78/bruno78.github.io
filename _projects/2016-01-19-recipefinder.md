@@ -20,5 +20,6 @@ This was the final assignment for the Intro to Rails class offered by John Hopki
 The goal of this assignment was to create an app using the Food2Fork API to pass and display data and to search for recipes.
 
 
-Github repo:
+Teh code can be found here:
+
 <https://github.com/bruno78/recipefinder>
