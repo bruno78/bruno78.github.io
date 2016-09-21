@@ -6,9 +6,56 @@
 </description>
     <link>http://127.0.0.1:4000//</link>
     <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 08 Sep 2016 17:49:01 -0400</pubDate>
-    <lastBuildDate>Thu, 08 Sep 2016 17:49:01 -0400</lastBuildDate>
+    <pubDate>Tue, 20 Sep 2016 16:47:42 -0400</pubDate>
+    <lastBuildDate>Tue, 20 Sep 2016 16:47:42 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Views on Gun Control Laws</title>
+        <description>&lt;p&gt;Every time a major gun incident happens, like the &lt;a href=&quot;https://en.wikipedia.org/wiki/2016_Orlando_nightclub_shooting&quot;&gt;Orlando mass shooting&lt;/a&gt;, or &lt;a href=&quot;https://www.washingtonpost.com/news/wonk/wp/2016/05/01/toddlers-have-shot-at-least-23-people-this-year&quot;&gt;toddlers accidentally shooting themselves or their beloved ones&lt;/a&gt;, people ask why haven’t any gun control laws put in place yet, while &lt;a href=&quot;http://www.patheos.com/blogs/formerlyfundie/the-disgusting-hypocrisy-of-the-anti-trans-bathroom-movement/&quot;&gt;laws&lt;/a&gt; on who should be using bathrooms are passed in a whim. It seems more than ever before, people are talking about gun regulations. The news shows a population divided between oppose to guns regulations laws where they think &lt;a href=&quot;http://www.foxnews.com/opinion/2016/06/06/four-ways-president-hillary-clinton-will-work-to-end-gun-ownership.html&quot;&gt;the government will take way their guns&lt;/a&gt; and people in favor where &lt;a href=&quot;http://csgv.org/issues/guns-and-mental-health/&quot;&gt;guns would not allow people with a historic of mental illness to purchase them&lt;/a&gt;. With that in mind, what are the views of Americans on gun control laws?&lt;/p&gt;
+
+&lt;p&gt;Looking at the &lt;a href=&quot;http://gss.norc.org/&quot;&gt;General Social Survey&lt;/a&gt; dataset where they asked americans of average age of 45, “what are their views on gun permits?” It’s a great surprise throughout the years at least 70% were in favor of gun permits laws.&lt;/p&gt;
+
+&lt;p&gt;[graph here]&lt;/p&gt;
+
+&lt;p&gt;The data shows four peaks where their opinions in favor of gun permits have increased. One from 1972 to 1974 where the highest was 76.1% in 1974, then decreasing to 70.8% in 1980, rising back again leading to 74.2% in 1982 and going down to 72.4% in 1984. The most interesting part is that from 1987 to 1993 we have a huge increase of opinion, almost 10% compared to the approx. 3% of the other peaks. Then from 1998 there’s a continuous decreasing on favor opinions where in 2014 reaches 72.3% which is almost the same as in 1972. What happened between these years where there are these peaks?&lt;/p&gt;
+
+&lt;h3 id=&quot;mass-shootings-vs-opinions-on-gun-control-laws&quot;&gt;Mass Shootings vs Opinions on Gun Control laws&lt;/h3&gt;
+
+&lt;p&gt;The &lt;a href=&quot;http://www.motherjones.com/politics/2012/07/mass-shootings-map&quot;&gt;Mother Jones Investigation on Mass Shootings&lt;/a&gt; is a possible way to answer this question. Unfortunately it only covers from 1982 to 2016 but still a good data to look at and compare it with the major peak that happened between 1987 and 2000.&lt;/p&gt;
+
+&lt;p&gt;[graph here mass shootings vs victims]&lt;/p&gt;
+
+&lt;p&gt;The logic in this case would be, whenever there’s no mass shootings or not a significant number of victims, you’d think that number of opinions in favor would go down because people wouldn’t be either thinking about it, or just buying a gun wouldn’t be a big deal. When a mass shooting happens, the number of people in favor of gun laws would go up because that would strike a discussion on gun regulations. That explains the tipping point of raising of opinions in 1984 where James Oliver Huberty, 41 years old, opened fire in a McDonald’s restaurant in San Ysidro, California before he was shot dead by a police officer, killing 22 people and injuring 19, leaving a total of 41 victims, known as San Ysidro McDonald’s massacre. Then the percentage of favor opinions keep going up where number of mass shootings per year is at least one, until 1993 where we have a total of 4 mass shootings in that year and the Long Island Rail Road shootings in Garden City leaving 25 victims is the biggest one, turning the direction of number of opinions to go down. The Air Force base shootings where we had 28 victims in 1994 was a possible tipping point on raise of opinions again. In 1998, there are 3 mass shootings and the numbers go down. It is almost like a pattern where the years with only one mass shooting would be a factor to raise favor opinions and the years with three or more would be an opposite effect. From 2000 to 2004, where we have only one mass shooting a year, the numbers don’t go up, and in 2004, the Damageplan Gun Show Shootings seems the trigger to raise the favor opinions again but not significantly. From 2006 onwards the numbers just go down breaking the possible pattern.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;For the case of Raising opinions in favor of gun control laws and the number of mass shootings and/or victims per year, there is not a strong correlation. Some mass shootings have may triggered the raise in favor opinions and the amount of mass shootings per year or the amount of victims may have changed that, but still not a strong factor to make a conclusion about it. Perhaps looking how the media reports those shootings and for how long, and what kind of people are affected in these shootings like children in schools may be a stronger factor. Looking also on how politicians views on and lobbyists are investing their money on the gun market, can be a strong determinant on how people think about gun control laws.&lt;/p&gt;
+
+&lt;h3 id=&quot;about-this-project&quot;&gt;About this project&lt;/h3&gt;
+
+&lt;p&gt;This project is part of &lt;a href=&quot;https://www.coursera.org/learn/python-capstone&quot;&gt;&lt;em&gt;Capstone: Retrieving, Processing, and Visualizing Data with Python&lt;/em&gt;&lt;/a&gt; which is the 5th and last course of the &lt;a href=&quot;https://www.coursera.org/specializations/python&quot;&gt;Python for Everybody Specialization&lt;/a&gt; by Michigan University offered at &lt;a href=&quot;https://www.coursera.org&quot;&gt;Coursera&lt;/a&gt;. The project was divided in two parts:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;1st part: (which was part of the course)&lt;/em&gt; Retrieve, process, visualize data and communicate the results, which was totally done in Python and the visulization part in D3js;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2nd part: (which was not part of the course)&lt;/em&gt; Compare with another data set and create graphs which was done in R (for speed)&lt;/p&gt;
+
+&lt;p&gt;More details about the entire process can be found &lt;a href=&quot;...&quot;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Fri, 16 Sep 2016 00:00:00 -0400</pubDate>
+        <link>http://127.0.0.1:4000//2016/09/16/gun-control-laws.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/09/16/gun-control-laws.html</guid>
+        
+        <category>python</category>
+        
+        <category>data analysis</category>
+        
+        <category>programming</category>
+        
+        <category>capstone project</category>
+        
+        
+      </item>
     
       <item>
         <title>Hello World!</title>
