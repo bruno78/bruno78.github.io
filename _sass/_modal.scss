@@ -7,22 +7,22 @@ a, p {
   overflow-wrap: break-word;
 }
 
-a { color: #f83265; }
-a:hover {
-  transition: all 0.2s ease-in-out;
-  color: #646464;
-  text-decoration: none;
-  outline: none;
-}
-a:focus {
-  color: #f83265;
-  text-decoration: none;
-  outline: none;
-}
 .modal-body {
   font-family: 'Muli';
   ul {
     list-style-type: circle;
+  }
+  a { color: #f83265; }
+  a:hover {
+    transition: all 0.2s ease-in-out;
+    color: #646464;
+    text-decoration: none;
+    outline: none;
+  }
+  a:focus {
+    color: #f83265;
+    text-decoration: none;
+    outline: none;
   }
 }
 
