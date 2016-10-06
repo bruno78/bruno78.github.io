@@ -6,6 +6,19 @@ h1, h2, h3, h4 {
 a, p {
   overflow-wrap: break-word;
 }
+
+a { color: #f83265; }
+a:hover {
+  transition: all 0.2s ease-in-out;
+  color: #646464;
+  text-decoration: none;
+  outline: none;
+}
+a:focus {
+  color: #f83265;
+  text-decoration: none;
+  outline: none;
+}
 .modal-body {
   font-family: 'Muli';
   ul {
@@ -23,11 +36,11 @@ a, p {
   i {
     margin-bottom: 20px;
     font-size: 16px;
-    color: #f83265;
+    color: #646464;
   }
   i:hover {
     transition: all 0.2s ease-in-out;
-    color: #646464;
+    color: #f83265;
     text-decoration: none;
   }
 }
