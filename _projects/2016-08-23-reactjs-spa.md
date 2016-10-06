@@ -1,7 +1,7 @@
 ---
 mod: 18
 title: ReactJS Single Page Application
-featured: true
+featured: false
 category: programming
 published: true
 date: 2016-08-23

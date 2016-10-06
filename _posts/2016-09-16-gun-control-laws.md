@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Views on Gun Control Laws
-blurb: Were the majority of the population always in favor gun control laws?
+title: How have Americans views changed regarding gun control through the years?
+blurb: It seems more people then ever are talking about gun regulations; however, it's been more then a decade since congress has passed a new law on gun control.
 date: 2016-09-16
 tags:
  - python
@@ -11,32 +11,67 @@ tags:
 ---
 
 
-Every time a major gun incident happens, like the [Orlando mass shooting](https://en.wikipedia.org/wiki/2016_Orlando_nightclub_shooting), or [toddlers accidentally shooting themselves or their beloved ones](https://www.washingtonpost.com/news/wonk/wp/2016/05/01/toddlers-have-shot-at-least-23-people-this-year), people ask why haven't any gun control laws put in place yet, while [laws](http://www.patheos.com/blogs/formerlyfundie/the-disgusting-hypocrisy-of-the-anti-trans-bathroom-movement/) on who should be using bathrooms are passed in a whim. It seems more than ever before, people are talking about gun regulations. The news shows a population divided between oppose to guns regulations laws where they think [the government will take way their guns](http://www.foxnews.com/opinion/2016/06/06/four-ways-president-hillary-clinton-will-work-to-end-gun-ownership.html) and people in favor where [guns would not allow people with a historic of mental illness to purchase them](http://csgv.org/issues/guns-and-mental-health/). With that in mind, what are the views of Americans on gun control laws?
+Every time a major gun incident occurs, like the [Orlando mass shooting](https://en.wikipedia.org/wiki/2016_Orlando_nightclub_shooting), or [toddlers accidentally shooting themselves or their loved ones](https://www.washingtonpost.com/news/wonk/wp/2016/05/01/toddlers-have-shot-at-least-23-people-this-year), there tends to be a public outcry asking why we don't have stricter gun control laws, yet legislation is still pending.
 
-Looking at the [General Social Survey](http://gss.norc.org/) dataset where they asked americans of average age of 45, "what are their views on gun permits?" It's a great surprise throughout the years at least 70% were in favor of gun permits laws.
+It's ironic to note that while some laws, such as [laws](http://www.patheos.com/blogs/formerlyfundie/the-disgusting-hypocrisy-of-the-anti-trans-bathroom-movement/) regarding who can and cannot use what public bathroom are passed in some states post haste, the same demographic often tends to oppose stricter gun control laws so vehemently that those laws are never passed.
+
+News outlets often portray public opinion as being highly divided despite the data actually showing otherwise. For example, Fox News often presents the false claim that people who support gun control want to take peoples guns away [the government will take away their guns](http://www.foxnews.com/opinion/2016/06/06/four-ways-president-hillary-clinton-will-work-to-end-gun-ownership.html). Other news outlets often oversimplify the issue, targeting specific arguments [stricter gun laws would not allow people with a history of mental illness to purchase them](http://csgv.org/issues/guns-and-mental-health/). It was these kinds of politically-biased and oversimplified reports that led me to want to know more about the actual statistics regarding percentages of American's supporting/opposing gun control.
+
+DATA ANALYSIS SUMMARY
+
+### GSS Opinions on Gun Permits
+
+Looking at the [General Social Survey](http://gss.norc.org/) dataset, 1972-2014, perhaps the biggest surprise, in general, was that across the entire survey period the percentage of Americans that favored gun permits never fell below 70%.
 
 [graph here]
 
-The data shows four peaks where their opinions in favor of gun permits have increased. One from 1972 to 1974 where the highest was 76.1% in 1974, then decreasing to 70.8% in 1980, rising back again leading to 74.2% in 1982 and going down to 72.4% in 1984. The most interesting part is that from 1987 to 1993 we have a huge increase of opinion, almost 10% compared to the approx. 3% of the other peaks. Then from 1998 there's a continuous decreasing on favor opinions where in 2014 reaches 72.3% which is almost the same as in 1972. What happened between these years where there are these peaks?
+The data shows there were four peaks during which gun permits were viewed more favorably. The first peak was during the period from 1972 to 1974, the highest point being in 1974 at 76.1% favorable. Then favorability dropped to 70.8% in 1980. In 1982 it rose again to 74.2% but then went back down to 72.4% in 1984.
 
-### Mass Shootings vs Opinions on Gun Control laws
+The longest and largest relative rise was sustained from 1987 to 1993 during which support for gun permits increases substantially, almost 10% compared to approximately 3% during the other peaks. Similarly, in the opposite direction, from 1998 to 2014 there was a continuous decline in favorable opinions, reaching a low of 72.3% in 2014. It's interesting to note that that percentage is almost the same as when the survey was first stated in 1972, 42 years prior.
 
-The [Mother Jones Investigation on Mass Shootings](http://www.motherjones.com/politics/2012/07/mass-shootings-map) is a possible way to answer this question. Unfortunately it only covers from 1982 to 2016 but still a good data to look at and compare it with the major peak that happened between 1987 and 2000.
+The next question, was what current events correlated with the peaks and valleys in favorable opinion?
+
+### MJI Mass Shootings vs GSS Opinions on Gun Permits
+
+The [Mother Jones Investigation on Mass Shootings](http://www.motherjones.com/politics/2012/07/mass-shootings-map) is a possible way to answer this question. Their data only covers the time period from 1982 to 2016 but provides some interesting insights. For instance, 58% of mass shootings were committed by whites, with 55% of those having prior signs of possible mental health illnesses. 79% of the weapons used by mass shooters were acquired legally. This data supports the argument that stricter background checks that search mental heath histories, might prevent some mass shootings. This data may also help to explain, in terms of the rise in frequency and severity of mass shootings, the peaks in support for gun permits between 1987 and 2000.
 
 [graph here mass shootings vs victims]
 
-The logic in this case would be, whenever there's no mass shootings or not a significant number of victims, you'd think that number of opinions in favor would go down because people wouldn't be either thinking about it, or just buying a gun wouldn't be a big deal. When a mass shooting happens, the number of people in favor of gun laws would go up because that would strike a discussion on gun regulations. That explains the tipping point of raising of opinions in 1984 where James Oliver Huberty, 41 years old, opened fire in a McDonald's restaurant in San Ysidro, California before he was shot dead by a police officer, killing 22 people and injuring 19, leaving a total of 41 victims, known as San Ysidro McDonald's massacre. Then the percentage of favor opinions keep going up where number of mass shootings per year is at least one, until 1993 where we have a total of 4 mass shootings in that year and the Long Island Rail Road shootings in Garden City leaving 25 victims is the biggest one, turning the direction of number of opinions to go down. The Air Force base shootings where we had 28 victims in 1994 was a possible tipping point on raise of opinions again. In 1998, there are 3 mass shootings and the numbers go down. It is almost like a pattern where the years with only one mass shooting would be a factor to raise favor opinions and the years with three or more would be an opposite effect. From 2000 to 2004, where we have only one mass shooting a year, the numbers don't go up, and in 2004, the Damageplan Gun Show Shootings seems the trigger to raise the favor opinions again but not significantly. From 2006 onwards the numbers just go down breaking the possible pattern.
+One way to look at this case would be, whenever there are no mass shootings or lower numbers of victims, the number of people supporting gun permits goes down because people are either not thinking about the issue, or during those times people don't associate buying a gun as much with mass shootings.
+
+One might think, when a mass shooting occurs, the number of people in favor of gun regulations would rise. It is certainly a logical deduction but as we've found with the data it is not a conclusion that we can make with any degree of certainty, at least, not one we can make with our comparison alone.
+
+That said, it's possible that the tipping point of raising support for gun permits in 1984 stemmed from a mass shooting where James Oliver Huberty, 41 years old, opened fire in a McDonald's restaurant in San Ysidro, California killing 22 people and injuring 19, before being killed himself by a police office. The incident is known as San Ysidro McDonald's massacre and there were 41 victims in total.
+
+After that shooting, there was at least one shooting every year from 1984 through 1993, with four mass shooting occurring in 1993 alone. Support for gun permits increased throughout this period. The Long Island Rail Road shootings in Garden City NY alone left 25 victims, the most of that period. Soon after that though, support for gun permits started to decrease, despite mass shootings continuing to occur, though on a less frequent basis.
+
+When the Air Force base shootings occurred in 1994, with 28 victims, it was a possible tipping point for the rise in opinions again. In 1998, there were 3 mass shootings but favorability down. At this point, it seems there is a pattern where the years with only one mass shooting, a raise in favorability is sparked, while the years with three or more mass shootings, favorability goes down. One would think that more mass shootings would cause favorability to rise or at least stay the same but the opposite seems to true.
+
+From 2000 to 2004, where we have only one mass shooting a year, the numbers don't go up, and in 2004, the Damageplan Gun Show Shootings seemed to trigger another raise in favorable opinions though not significantly. Then from 2006 to 2014 the numbers consistently go down, breaking all possible patterns.
+
+Perhaps some of the reason for the unexpected patterns described above, could be that when mass shootings increase within a single year, there's a rise in the number of people who feel the need to protect themselves, and so therefore the number of people in favor of gun control goes down. It is an interesting paradox that while less strict gun control laws would make it easier for a sane person to purchase a gun, it would also make it easier for person with a history of mental illness to purchase a gun.
+
+[graph no mass shootings vs no victims]
 
 ### Conclusion
 
-For the case of Raising opinions in favor of gun control laws and the number of mass shootings and/or victims per year, there is not a strong correlation. Some mass shootings have may triggered the raise in favor opinions and the amount of mass shootings per year or the amount of victims may have changed that, but still not a strong factor to make a conclusion about it. Perhaps looking how the media reports those shootings and for how long, and what kind of people are affected in these shootings like children in schools may be a stronger factor. Looking also on how politicians views on and lobbyists are investing their money on the gun market, can be a strong determinant on how people think about gun control laws.
+For the case that gun control favorability rises, as the number of mass shootings rise, there is not a strong direct correlation. While some mass shootings may have triggered a rise in favorability that does not hold up across the period we studied. As we've seen there are two types of correlations. In 1984, after a mass shooting, favorability went up as would be expected. But we also found two other examples, where favorability went down after mass shootings. Therefore it's not possible to say that there is a direst correlation between the rise in mass shootings and the rise in favorability.
 
-### About this project
+Perhaps looking at how the media reports shootings, and for how long shootings are covered, as well as, what kinds of people are affected by each shooting, like children in schools, perhaps that may lead to more direct proof that's there's a strong relationship between mass shootings and public opinion. Also, perhaps looking at the correlation between views of politicians as they are influenced by gun lobbyists, the NRA etc., perhaps a stronger determinant could be found.
 
-This project is part of [*Capstone: Retrieving, Processing, and Visualizing Data with Python*](https://www.coursera.org/learn/python-capstone) which is the 5th and last course of the [Python for Everybody Specialization](https://www.coursera.org/specializations/python) by Michigan University offered at [Coursera](https://www.coursera.org). The project was divided in two parts:
+### About GSS
 
-*1st part: (which was part of the course)* Retrieve, process, visualize data and communicate the results, which was totally done in Python and the visulization part in D3js;
+The General Social Survey is part of the National Data Program for the Social Sciences conducted since 1972 by NORC at the University of Chicago, supported by the National Science Foundation.
 
-*2nd part: (which was not part of the course)* Compare with another data set and create graphs which was done in R (for speed)
+The [GSS website](http://gss.norc.org/About-The-GSS) explains that the goals of the program are twofold: " to conduct basic scientific research on the structure and development of American society"; and "to distribute up-to-date, important, high-quality data to social scientists, students, policy makers, and others."
 
-More details about the entire process can be found [here](...)
+Additionally the website's homepage http://gss.norc.org/  says, "Since 1972, the General Social Survey (GSS) has provided politicians, policymakers, and scholars with a clear and unbiased perspective on what Americans think and feel about such issues as national spendi​ng priorities, crime and punishment, intergroup relations, and confidence in institutions."
+
+The National Data Program for the Social Sciences is directed by Tom W. Smith, Peter V. Marsden, and Michael Hout. It is advised by a Board of Overseers consisting of prominent social scientists.
+
+### About Mother Jones Investigation
+
+It's a dataset on Mass Shootings originally covered 1982-2012 and has since been expanded through 2016. For more information, click [here](http://www.motherjones.com/politics/2012/07/mass-shootings-map)
+
+
+The code for this project can be found [here](https://github.com/bruno78/python-capstone-project.git)
