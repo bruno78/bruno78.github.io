@@ -17,13 +17,15 @@ It's ironic to note that while some laws, such as [laws](http://www.patheos.com/
 
 News outlets often portray public opinion as being highly divided despite the data actually showing otherwise. For example, Fox News often presents the false claim that people who support gun control want to take peoples guns away [the government will take away their guns](http://www.foxnews.com/opinion/2016/06/06/four-ways-president-hillary-clinton-will-work-to-end-gun-ownership.html). Other news outlets often oversimplify the issue, targeting specific arguments [stricter gun laws would not allow people with a history of mental illness to purchase them](http://csgv.org/issues/guns-and-mental-health/). It was these kinds of politically-biased and oversimplified reports that led me to want to know more about the actual statistics regarding percentages of American's supporting/opposing gun control.
 
-DATA ANALYSIS SUMMARY
 
-### GSS Opinions on Gun Permits
+### Opinions on Gun Permits
 
 Looking at the [General Social Survey](http://gss.norc.org/) dataset, 1972-2014, perhaps the biggest surprise, in general, was that across the entire survey period the percentage of Americans that favored gun permits never fell below 70%.
 
-[graph here]
+<div class="graph">
+  <iframe src="{{ "/graph.html" | prepend: site.baseurl }}" width="100%" height="400" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+</div>
+
 
 The data shows there were four peaks during which gun permits were viewed more favorably. The first peak was during the period from 1972 to 1974, the highest point being in 1974 at 76.1% favorable. Then favorability dropped to 70.8% in 1980. In 1982 it rose again to 74.2% but then went back down to 72.4% in 1984.
 
@@ -31,7 +33,7 @@ The longest and largest relative rise was sustained from 1987 to 1993 during whi
 
 The next question, was what current events correlated with the peaks and valleys in favorable opinion?
 
-### MJI Mass Shootings vs GSS Opinions on Gun Permits
+### Mass Shootings vs Opinions on Gun Permits
 
 The [Mother Jones Investigation on Mass Shootings](http://www.motherjones.com/politics/2012/07/mass-shootings-map) is a possible way to answer this question. Their data only covers the time period from 1982 to 2016 but provides some interesting insights. For instance, 58% of mass shootings were committed by whites, with 55% of those having prior signs of possible mental health illnesses. 79% of the weapons used by mass shooters were acquired legally. This data supports the argument that stricter background checks that search mental heath histories, might prevent some mass shootings. This data may also help to explain, in terms of the rise in frequency and severity of mass shootings, the peaks in support for gun permits between 1987 and 2000.
 
@@ -49,7 +51,7 @@ When the Air Force base shootings occurred in 1994, with 28 victims, it was a po
 
 From 2000 to 2004, where we have only one mass shooting a year, the numbers don't go up, and in 2004, the Damageplan Gun Show Shootings seemed to trigger another raise in favorable opinions though not significantly. Then from 2006 to 2014 the numbers consistently go down, breaking all possible patterns.
 
-Perhaps some of the reason for the unexpected patterns described above, could be that when mass shootings increase within a single year, there's a rise in the number of people who feel the need to protect themselves, and so therefore the number of people in favor of gun control goes down. It is an interesting paradox that while less strict gun control laws would make it easier for a sane person to purchase a gun, it would also make it easier for person with a history of mental illness to purchase a gun.
+Perhaps some of the reason for the unexpected patterns described above, could be that when mass shootings increase within a single year, there's a rise in the number of [people who feel the need to protect themselves](https://www.youtube.com/watch?v=n9xUCI3nJsQ), and so therefore the number of people in favor of gun control goes down. It is an interesting paradox that while less strict gun control laws would make it easier for a sane person to purchase a gun, it would also make it easier for person with a history of mental illness to purchase a gun.
 
 [graph no mass shootings vs no victims]
 
@@ -59,7 +61,7 @@ For the case that gun control favorability rises, as the number of mass shooting
 
 Perhaps looking at how the media reports shootings, and for how long shootings are covered, as well as, what kinds of people are affected by each shooting, like children in schools, perhaps that may lead to more direct proof that's there's a strong relationship between mass shootings and public opinion. Also, perhaps looking at the correlation between views of politicians as they are influenced by gun lobbyists, the NRA etc., perhaps a stronger determinant could be found.
 
-### About GSS
+#### About GSS
 
 The General Social Survey is part of the National Data Program for the Social Sciences conducted since 1972 by NORC at the University of Chicago, supported by the National Science Foundation.
 
@@ -69,7 +71,7 @@ Additionally the website's homepage http://gss.norc.org/  says, "Since 1972, the
 
 The National Data Program for the Social Sciences is directed by Tom W. Smith, Peter V. Marsden, and Michael Hout. It is advised by a Board of Overseers consisting of prominent social scientists.
 
-### About Mother Jones Investigation
+#### About Mother Jones Investigation
 
 It's a dataset on Mass Shootings originally covered 1982-2012 and has since been expanded through 2016. For more information, click [here](http://www.motherjones.com/politics/2012/07/mass-shootings-map)
 
