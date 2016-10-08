@@ -37,7 +37,9 @@ The next question, was what current events correlated with the peaks and valleys
 
 The [Mother Jones Investigation on Mass Shootings](http://www.motherjones.com/politics/2012/07/mass-shootings-map) is a possible way to answer this question. Their data only covers the time period from 1982 to 2016 but provides some interesting insights. For instance, 58% of mass shootings were committed by whites, with 55% of those having prior signs of possible mental health illnesses. 79% of the weapons used by mass shooters were acquired legally. This data supports the argument that stricter background checks that search mental heath histories, might prevent some mass shootings. This data may also help to explain, in terms of the rise in frequency and severity of mass shootings, the peaks in support for gun permits between 1987 and 2000.
 
-[graph here mass shootings vs victims]
+<div id="wrapper">
+  <img class="img-responsive" src="{{ "/assets/img/mass_shootings-vs-gunlaws.svg" | prepend: site.baseurl }}">
+</div>
 
 One way to look at this case would be, whenever there are no mass shootings or lower numbers of victims, the number of people supporting gun permits goes down because people are either not thinking about the issue, or during those times people don't associate buying a gun as much with mass shootings.
 
@@ -53,7 +55,6 @@ From 2000 to 2004, where we have only one mass shooting a year, the numbers don'
 
 Perhaps some of the reason for the unexpected patterns described above, could be that when mass shootings increase within a single year, there's a rise in the number of [people who feel the need to protect themselves](https://www.youtube.com/watch?v=n9xUCI3nJsQ), and so therefore the number of people in favor of gun control goes down. It is an interesting paradox that while less strict gun control laws would make it easier for a sane person to purchase a gun, it would also make it easier for person with a history of mental illness to purchase a gun.
 
-[graph no mass shootings vs no victims]
 
 ### Conclusion
 
