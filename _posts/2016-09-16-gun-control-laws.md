@@ -1,7 +1,7 @@
 ---
 layout: post
-title: How have Americans views changed regarding gun control through the years?
-blurb: It seems more people then ever are talking about gun regulations; however, it's been more then a decade since congress has passed a new law on gun control.
+title: How have Americans' views changed regarding gun control through the years?
+blurb: It seems more people than ever are talking about gun regulations; however, it's been more then a decade since congress has passed a new law on gun control.
 date: 2016-09-16
 tags:
  - python
