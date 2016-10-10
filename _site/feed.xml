@@ -6,8 +6,8 @@
 </description>
     <link>http://127.0.0.1:4000//</link>
     <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 08 Oct 2016 15:29:39 -0400</pubDate>
-    <lastBuildDate>Sat, 08 Oct 2016 15:29:39 -0400</lastBuildDate>
+    <pubDate>Mon, 10 Oct 2016 13:38:24 -0400</pubDate>
+    <lastBuildDate>Mon, 10 Oct 2016 13:38:24 -0400</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
     
       <item>
@@ -23,19 +23,8 @@
 &lt;p&gt;Looking at the &lt;a href=&quot;http://gss.norc.org/&quot;&gt;General Social Survey&lt;/a&gt; dataset, 1972-2014, perhaps the biggest surprise, in general, was that across the entire survey period the percentage of Americans that favored gun permits never fell below 70%.&lt;/p&gt;
 
 &lt;div id=&quot;wrapper&quot;&gt;
-  &lt;iframe id=&quot;scaled-frame&quot; src=&quot;/graph.BAK&quot; width=&quot;100%&quot; height=&quot;400&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
+  &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/img/gunlaw-opinion.svg&quot; /&gt;
 &lt;/div&gt;
-
-&lt;div id=&quot;wrapper&quot;&gt;
-  &lt;iframe id=&quot;scaled-frame&quot; src=&quot;/graph.html&quot; width=&quot;100%&quot; height=&quot;400&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot;&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;div id=&quot;graph&quot;&gt;&lt;/div&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;path/to/pym.js&quot;&gt;&lt;/script&gt;
-
-&lt;script&gt;
-    var line_graph_parent = new pym.Parent('line-graph', 'path/to/child.html', {});
-&lt;/script&gt;
 
 &lt;p&gt;The data shows there were four peaks during which gun permits were viewed more favorably. The first peak was during the period from 1972 to 1974, the highest point being in 1974 at 76.1% favorable. Then favorability dropped to 70.8% in 1980. In 1982 it rose again to 74.2% but then went back down to 72.4% in 1984.&lt;/p&gt;
 
