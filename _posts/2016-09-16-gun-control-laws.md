@@ -22,8 +22,8 @@ News outlets often portray public opinion as being highly divided despite the da
 
 Looking at the [General Social Survey](http://gss.norc.org/) dataset, 1972-2014, perhaps the biggest surprise, in general, was that across the entire survey period the percentage of Americans that favored gun permits never fell below 70%.
 
-<div class="graph">
-  <iframe src="{{ "/graph.html" | prepend: site.baseurl }}" width="100%" height="400" marginwidth="0" marginheight="0" scrolling="no"></iframe>
+<div id="wrapper">
+  <img class="img-responsive" src="{{ "/assets/img/gunlaw-opinion.svg" | prepend: site.baseurl }}">
 </div>
 
 
