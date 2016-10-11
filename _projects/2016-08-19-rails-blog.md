@@ -31,6 +31,7 @@ About this app
 This app was built on Rails 4 and uploaded on Heroku
 
 It has the following features:
+
 * Posts
 * Create / Edit / Destroy
 * Markdown (RedCarpet)
