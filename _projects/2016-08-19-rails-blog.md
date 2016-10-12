@@ -13,7 +13,7 @@ tags:
   - Web development
 ---
 
-A blog created on Rails 4.2.5 full with great features
+A blog created on Rails 4.2.5 filled with great features
 <!-- excerpt -->
 
 Learning Process

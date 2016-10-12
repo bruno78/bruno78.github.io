@@ -1,6 +1,6 @@
 ---
 mod: 21
-title: America's Views on Gun Control Laws
+title: Americans' Views on Gun Control
 featured: true
 category: programming
 published: true
