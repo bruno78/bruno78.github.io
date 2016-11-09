@@ -28,7 +28,7 @@ While I plan to continue developing the blog, making improvements along the way,
 
 About this app
 
-This app was built on Rails 4 and uploaded on Heroku
+This app was built on Rails 4.2.5.1
 
 It has the following features:
 
@@ -48,6 +48,6 @@ It has the following features:
 * Sendgrid
 
 
-Link to the blog:
+For github repo:
 
-[blog](http://bgtavares.herokuapp.com)
+<https://github.com/bruno78/personal-blog>
