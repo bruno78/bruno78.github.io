@@ -11,6 +11,9 @@ $(document).ready(function() {
       // Avoiding exposing email
       var contactform =  document.getElementById('contactform');
           contactform.setAttribute('action', '//formspree.io/' + 'me' + '@' + 'brunogtavares' + '.' + 'com');
-    }  
+      $("form").append("<div class=\"hidden\">
+        <input type='hidden' name='_next' value=\"{{ \"/thankyou.html\" | prepend: site.baseurl }}\">
+      </div>");
+    }
   });
 });
