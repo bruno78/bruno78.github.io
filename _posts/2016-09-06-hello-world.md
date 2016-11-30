@@ -3,6 +3,7 @@ layout: post
 title: Hello World!
 blurb: Finally my website is up and running.
 date: 2016-09-06
+published: true
 tags:
  - hello world
 ---
