@@ -6,10 +6,10 @@
 </description>
     <link>http://127.0.0.1:4000//</link>
     <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 12 Nov 2016 01:34:17 -0500</pubDate>
-    <lastBuildDate>Sat, 12 Nov 2016 01:34:17 -0500</lastBuildDate>
+    <pubDate>Sat, 26 Nov 2016 13:04:48 -0500</pubDate>
+    <lastBuildDate>Sat, 26 Nov 2016 13:04:48 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
-    
+
       <item>
         <title>What's Out There</title>
         <description>&lt;p&gt;These are new technologies and applications that I’ve seen in meetups&lt;/p&gt;
@@ -78,16 +78,16 @@
         <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
         <link>http://127.0.0.1:4000//2016/10/05/out-there.html</link>
         <guid isPermaLink="true">http://127.0.0.1:4000//2016/10/05/out-there.html</guid>
-        
+
         <category>Offline first</category>
-        
+
         <category>Decentralized Internet</category>
-        
+
         <category>Meetups</category>
-        
-        
+
+
       </item>
-    
+
       <item>
         <title>How have Americans' views changed regarding gun control through the years?</title>
         <description>&lt;p&gt;Every time a major gun incident occurs, like the &lt;a href=&quot;https://en.wikipedia.org/wiki/2016_Orlando_nightclub_shooting&quot;&gt;Orlando mass shooting&lt;/a&gt;, or &lt;a href=&quot;https://www.washingtonpost.com/news/wonk/wp/2016/05/01/toddlers-have-shot-at-least-23-people-this-year&quot;&gt;toddlers accidentally shooting themselves or their loved ones&lt;/a&gt;, there tends to be a public outcry asking why we don’t have stricter gun control laws, yet legislation is still pending.&lt;/p&gt;
@@ -157,18 +157,18 @@
         <pubDate>Fri, 16 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://127.0.0.1:4000//2016/09/16/gun-control-laws.html</link>
         <guid isPermaLink="true">http://127.0.0.1:4000//2016/09/16/gun-control-laws.html</guid>
-        
+
         <category>python</category>
-        
+
         <category>data analysis</category>
-        
+
         <category>programming</category>
-        
+
         <category>capstone project</category>
-        
-        
+
+
       </item>
-    
+
       <item>
         <title>Hello World!</title>
         <description>&lt;p&gt;Building my website was not easy but nonetheless fun and challenging. This is a product of persistence, involving long hours of studying and searching for solutions. I learned a lot along the way and while I know I still have a lot more to learn and do, I can’t wait to see what lies ahead no matter the difficulty. Thank you to everyone who helped me with this, from the bottom of my heart.&lt;/p&gt;
@@ -180,11 +180,11 @@
         <pubDate>Tue, 06 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://127.0.0.1:4000//2016/09/06/hello-world.html</link>
         <guid isPermaLink="true">http://127.0.0.1:4000//2016/09/06/hello-world.html</guid>
-        
+
         <category>hello world</category>
-        
-        
+
+
       </item>
-    
+
   </channel>
 </rss>
