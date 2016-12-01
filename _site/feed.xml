@@ -6,26 +6,27 @@
 </description>
     <link>http://127.0.0.1:4000//</link>
     <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 26 Nov 2016 13:04:48 -0500</pubDate>
-    <lastBuildDate>Sat, 26 Nov 2016 13:04:48 -0500</lastBuildDate>
+    <pubDate>Wed, 30 Nov 2016 19:54:51 -0500</pubDate>
+    <lastBuildDate>Wed, 30 Nov 2016 19:54:51 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
-
+    
       <item>
-        <title>What's Out There</title>
-        <description>&lt;p&gt;These are new technologies and applications that I’ve seen in meetups&lt;/p&gt;
+        <title>Offline First - No Internet connection and it's ok!</title>
+        <description>&lt;p&gt;Going to Meetups is a good way to learn more about upcoming technologies. Of late, I’ve enjoyed learning how to develop mobile apps using JavaScript. One concept that interested me is &lt;em&gt;Offline First&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;offline-first-apps&quot;&gt;Offline-First Apps&lt;/h3&gt;
+&lt;h3 id=&quot;no-internet-connection&quot;&gt;&lt;em&gt;“No Internet connection!”&lt;/em&gt;&lt;/h3&gt;
 
-&lt;p&gt;How many times you tried to open an app with poor or no internet connection and the first thing you get is this error message: “No internet connection”? It’s over, you can’t use it until you get a network signal. Well, Offline-First came to solve this problem. The idea here is to create apps that still work even when you are in places where there’s poor or no connectivity. It doesn’t do anything miraculosly, it just stores the right necessary amount of data that lets your app work under critical circumstances. That said, if you are on a plane with no Internet connection and decide to open your Offline-First weather app, it will work but will you give you the temperature of the last time it synchronized with the internet network. As soon as you are back to a place with connection, it will update without you have to do anything. All it is, is not giving you a “no connection error” and keep your app running with basic amount of data.&lt;/p&gt;
+&lt;p&gt;How many times have you tried to open an app with little or no internet connection and the first thing you see is this error message: “No internet connection”? At that point, you know it’s over; you can’t use your application until you get a network signal. Well, Offline First solves this problem. The idea is to create apps that will still work even when you have flakey or non-existent connection. That said, the technology doesn’t do anything miraculous; it just stores the right amount of data to keep your app working no matter the circumstances. For example, if you are on a subway with no Internet connection and you decide to open your Offline-First twitter feed app, it will show you the tweets from the last time it was synchronized with the internet. As soon as you have connection again, it will update without your having to do anything. All it actually does is, instead of giving you a “no connection error”, it gives you the data from it’s last internet sync.&lt;/p&gt;
 
-&lt;p&gt;It uses a JavaScript database named PouchDB which is a trunked down version of Apache’s CouchDB (which you can also use) and it runs within your browser/app. The advantage of these apps are:&lt;/p&gt;
+&lt;p&gt;Offline First uses a JavaScript database named PouchDB which is a trunked down version of Apache’s CouchDB (which you can also use) and it runs within your browser/app. The advantage of these apps are:&lt;/p&gt;
+
 &lt;ol&gt;
-  &lt;li&gt;It’s actually faster since all the CRUD operations happens within your app.&lt;/li&gt;
-  &lt;li&gt;It supposedly takes less battery and bandwidth because data is synchronized periodically/in batches instead of constantly.&lt;/li&gt;
+  &lt;li&gt;It’s faster since all the CRUD operations happens within your app.&lt;/li&gt;
+  &lt;li&gt;It supposedly takes less battery and bandwidth because data is synchronized periodically, in batches instead of constantly.&lt;/li&gt;
   &lt;li&gt;The main and foremost: it works offline.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Offline-first apps are good for:&lt;/p&gt;
+&lt;p&gt;Offline First apps are good for:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Frontend Web apps&lt;/li&gt;
@@ -35,59 +36,31 @@
   &lt;li&gt;Internet of Things (IoT)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;More info:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/7L7esHWAjSU&quot;&gt;https://youtu.be/7L7esHWAjSU&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Give it a shot using Hoodie:&lt;/p&gt;
+&lt;p&gt;If you want to learn more about Offline First or go for test drive, give a shot using Hoodie, a nice &lt;a href=&quot;http://hood.ie/initiatives/#nobackend&quot;&gt;noBackend&lt;/a&gt; framework:&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://hood.ie/&quot;&gt;http://hood.ie/&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;server-less-framework&quot;&gt;Server-less Framework&lt;/h3&gt;
+&lt;p&gt;or if you are looking for something more lightweight as in a script, Up Up is your way to go:&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;Build applications comprised of microservices that run in response to events, auto-scale for you, and only charge you when they run. This lowers the total cost of maintaining your apps, enabling you to build more logic, faster.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;They are made to run on AWS Lambda but they are expanding to support other cloud providers.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://serverless.com/&quot;&gt;https://serverless.com/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;gitbook&quot;&gt;GitBook&lt;/h3&gt;
-
-&lt;p&gt;More and more I see people using Gitbook to write O’Reily edition type books, tutorials, classes, companies’ Wikies and documentation of their data.&lt;/p&gt;
-
-&lt;h3 id=&quot;workworkjs&quot;&gt;WorkWorkJS&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;A library that speeds up computation-heavy tasks in JavaScript with multi-threading and Web Workers.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;When you have heavy computations, Workwork.js supplements Array.prototype’s map and filter and performs them on a separate thread using promise&lt;/p&gt;
-
-&lt;p&gt;Demo:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://workworkjs.github.io/workworkjs&quot;&gt;https://workworkjs.github.io/workworkjs&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;github repo:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/workworkjs/workworkjs&quot;&gt;https://github.com/workworkjs/workworkjs&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;They are all exciting and I’m looking forward to try them and see how they work in practice.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.talater.com/upup/&quot;&gt;https://www.talater.com/upup/&lt;/a&gt;&lt;/p&gt;
 </description>
         <pubDate>Wed, 05 Oct 2016 00:00:00 -0400</pubDate>
-        <link>http://127.0.0.1:4000//2016/10/05/out-there.html</link>
-        <guid isPermaLink="true">http://127.0.0.1:4000//2016/10/05/out-there.html</guid>
-
-        <category>Offline first</category>
-
-        <category>Decentralized Internet</category>
-
+        <link>http://127.0.0.1:4000//2016/10/05/offline-first.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2016/10/05/offline-first.html</guid>
+        
+        <category>Offline First</category>
+        
+        <category>JavaScript</category>
+        
+        <category>Mobile development</category>
+        
+        <category>Web development</category>
+        
         <category>Meetups</category>
-
-
+        
+        
       </item>
-
+    
       <item>
         <title>How have Americans' views changed regarding gun control through the years?</title>
         <description>&lt;p&gt;Every time a major gun incident occurs, like the &lt;a href=&quot;https://en.wikipedia.org/wiki/2016_Orlando_nightclub_shooting&quot;&gt;Orlando mass shooting&lt;/a&gt;, or &lt;a href=&quot;https://www.washingtonpost.com/news/wonk/wp/2016/05/01/toddlers-have-shot-at-least-23-people-this-year&quot;&gt;toddlers accidentally shooting themselves or their loved ones&lt;/a&gt;, there tends to be a public outcry asking why we don’t have stricter gun control laws, yet legislation is still pending.&lt;/p&gt;
@@ -157,18 +130,18 @@
         <pubDate>Fri, 16 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://127.0.0.1:4000//2016/09/16/gun-control-laws.html</link>
         <guid isPermaLink="true">http://127.0.0.1:4000//2016/09/16/gun-control-laws.html</guid>
-
+        
         <category>python</category>
-
+        
         <category>data analysis</category>
-
+        
         <category>programming</category>
-
+        
         <category>capstone project</category>
-
-
+        
+        
       </item>
-
+    
       <item>
         <title>Hello World!</title>
         <description>&lt;p&gt;Building my website was not easy but nonetheless fun and challenging. This is a product of persistence, involving long hours of studying and searching for solutions. I learned a lot along the way and while I know I still have a lot more to learn and do, I can’t wait to see what lies ahead no matter the difficulty. Thank you to everyone who helped me with this, from the bottom of my heart.&lt;/p&gt;
@@ -180,11 +153,11 @@
         <pubDate>Tue, 06 Sep 2016 00:00:00 -0400</pubDate>
         <link>http://127.0.0.1:4000//2016/09/06/hello-world.html</link>
         <guid isPermaLink="true">http://127.0.0.1:4000//2016/09/06/hello-world.html</guid>
-
+        
         <category>hello world</category>
-
-
+        
+        
       </item>
-
+    
   </channel>
 </rss>
