@@ -27,6 +27,7 @@ Techniques used:
 * open/closed card sort
 * mockups
 
+
 __The Result:__
 
 A new responsive and rebranded website with all the basic information in the front page with and easy navigation through the other pages.
