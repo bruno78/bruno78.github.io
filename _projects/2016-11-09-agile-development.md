@@ -18,7 +18,7 @@ For this project, I created the first steps of a software development.
 
 This project was the final assignment from the course “Getting Started: Agile Development Meets Design Thinking” offered by University of Virginia on Coursera.
 
-The final assignement can be found [here](https://drive.google.com/file/d/0B85Nw7t7guLiTDFOVHByQTVXdXM/view?usp=sharing)
+The final assignment can be found [here](https://drive.google.com/file/d/0B85Nw7t7guLiTDFOVHByQTVXdXM/view?usp=sharing)
 
 
 The course can be taken [here](https://www.coursera.org/learn/getting-started-agile)
