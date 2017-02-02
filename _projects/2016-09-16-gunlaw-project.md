@@ -13,7 +13,8 @@ tags:
   - Data analysis
 ---
 
-This project is part of [*Capstone: Retrieving, Processing, and Visualizing Data with Python*](https://www.coursera.org/learn/python-capstone) which is the 5th and last course of the [Python for Everybody Specialization](https://www.coursera.org/specializations/python) by Michigan University offered on [Coursera](https://www.coursera.org).
+This project analyses how opinions on gun control laws have changed throughout the years in the United States.
+
 <!-- excerpt -->
 
 The project was divided in two parts:
@@ -29,3 +30,5 @@ The final result of this project can be viewed [America's View on Gun Permits](h
 The code and data subsets can be viewed [here](https://github.com/bruno78/python-capstone-project.git)
 
 The certificate of the entire specialization can be viewed [here](https://www.coursera.org/account/accomplishments/specialization/certificate/34A6VHCWGN7C)
+
+This project is part of [*Capstone: Retrieving, Processing, and Visualizing Data with Python*](https://www.coursera.org/learn/python-capstone) which is the 5th and last course of the [Python for Everybody Specialization](https://www.coursera.org/specializations/python) by Michigan University offered on [Coursera](https://www.coursera.org).
