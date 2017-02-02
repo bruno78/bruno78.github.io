@@ -21,6 +21,11 @@ __The Process:__
 
 The old website was built on WordPress. After I created the mockup and presented for approval, I designed the basic layout using html/sass, then migrated to WordPress as new template and finished designing the rest of the pages. The following plugins were used: 1. Bootstrap helper for the menu (wp_bootstrap_navwalker); 2. Ninja Forms for the contact form; 3. Meta slider for slideshows; 4. Tockify Events Calendar for the events page; and, 5. WP Dashboard Notes to create the "Help" documentation on the dashboard. I also created customized settings so the owners could change the side menu without dealing with html code, plus wrote the "Help" section to guide the owners when making changes. Lastly, I took and edited photographs and video for the website.
 
+Techniques used:
+* interview
+* open/closed card sort
+* mockups
+
 __The Result:__
 
 A new responsive and rebranded website with all the basic information in the front page with and easy navigation through the other pages.
