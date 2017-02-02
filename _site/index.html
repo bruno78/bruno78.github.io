@@ -96,6 +96,71 @@
         
           
             <li>
+              <h3><a href="#" data-toggle="modal" data-target="#myModal-23">The Rosemont NYC Bar</a></h3>
+              <p><p>The owners of The Rosemont NYC in Williamsburg, Brooklyn NY, decided to change their bar from a jazz bar to a Queer/gay bar, offering affordable drinks, queer rock parties, drag queen shows, and other events every week.</p>
+
+</p>
+            </li>
+            <div class="modal fade" id="myModal-23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">The Rosemont NYC Bar</h2>
+      </div>
+      <div class="modal-body">
+        <p>The owners of The Rosemont NYC in Williamsburg, Brooklyn NY, decided to change their bar from a jazz bar to a Queer/gay bar, offering affordable drinks, queer rock parties, drag queen shows, and other events every week.
+<!-- excerpt -->
+The owners wanted a website that would reflect these changes, all info easy to access, “no long scrolling” sic, and easy to maintain themselves without monthly costs to have someone else update the info.</p>
+
+<p><strong>The Process:</strong></p>
+
+<p>The old website was built on WordPress. After I created the mockup and presented for approval, I designed the basic layout using html/sass, then migrated to WordPress as new template and finished designing the rest of the pages. The following plugins were used: 1. Bootstrap helper for the menu (wp_bootstrap_navwalker); 2. Ninja Forms for the contact form; 3. Meta slider for slideshows; 4. Tockify Events Calendar for the events page; and, 5. WP Dashboard Notes to create the “Help” documentation on the dashboard. I also created customized settings so the owners could change the side menu without dealing with html code, plus wrote the “Help” section to guide the owners when making changes. Lastly, I took and edited photographs and video for the website.</p>
+
+<p><strong>The Result:</strong></p>
+
+<p>A new responsive and rebranded website with all the basic information in the front page with and easy navigation through the other pages.</p>
+
+<p>The Rosemont NYC:
+<a href="http://therosemontnyc.com"><img class="img-responsive" src="/assets/img/therosemontnyc.png" /></a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=The Rosemont NYC Bar by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html&title=The Rosemont NYC Bar&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            
+          
+          
+            <li>
               <h3><a href="#" data-toggle="modal" data-target="#myModal-22">Kitchen Helper - Agile Development</a></h3>
               <p><p>This project was the final assignment from the course “Getting Started: Agile Development Meets Design Thinking” offered by University of Virginia on Coursera.</p>
 
@@ -228,96 +293,6 @@ For this project, I developed the first steps of a product: I wrote an introduct
           
           
           
-          
-          
-            <li>
-              <h3><a href="#" data-toggle="modal" data-target="#myModal-17">Rails Blog</a></h3>
-              <p><p>A blog created on Rails 4.2.5 filled with great features</p>
-
-</p>
-            </li>
-            <div class="modal fade" id="myModal-17" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h2 class="modal-title" id="myModalLabel">Rails Blog</h2>
-      </div>
-      <div class="modal-body">
-        <p>A blog created on Rails 4.2.5 filled with great features
-<!-- excerpt --></p>
-
-<p>Learning Process</p>
-
-<p>Most blog building tutorials out there just teach you the basic: how to create, edit, and delete posts; how to add and delete comments; how to add authorization to allow users to sign up, sign in and sign out; as well as, how to edit and delete one’s own posts and comments.</p>
-
-<p>In creating this blog, I went a bit beyond the basics, creating a blog with only one user. I wanted the posts to have the ability to render markdown content and have syntax highlighting - like posts on github. Instead of using “act_as_taggable” gem, for fun I decided to research and create my own tags. I inserted the tags on the side bar with their counts shown to the sides. Additionally, I included the method “tag-cloud” (though it’s not showing) inside of the blog app in case I later wanted to implement it on the blog. In terms of attaching an image, I wanted to be able to customize its size, yet still have the image be responsive. That led me to weigh the difference between using carrierwave and paperclip gems. I ended up using carrierwave as it gave me the flexibility I wanted. My posts can render links, videos, and images (the videos are responsive as well). I used sendgrid to handle the contact page. When a message form is completed, it is sent through sendgrid and then to my email.</p>
-
-<p>The most difficult part of building the blog was making the design decisions. Choosing a font and a style that would best represent myself was perhaps the hardest part. I wanted an aesthetic that would be both retro and contemporary, having a clean layout with touch of vibrant color.</p>
-
-<p>While I plan to continue developing the blog, making improvements along the way, I’m happy with the results so far. I hope you enjoy viewing the blog as much as I enjoyed creating it.</p>
-
-<p>About this app</p>
-
-<p>This app was built on Rails 4.2.5.1</p>
-
-<p>It has the following features:</p>
-
-<ul>
-  <li>Posts</li>
-  <li>Create / Edit / Destroy</li>
-  <li>Markdown (RedCarpet)</li>
-  <li>Syntax highlighting (pygments)</li>
-  <li>Tagging and search by tags</li>
-  <li>The posts can render links, videos and images</li>
-  <li>You can adjust the heigh x width of the image and still responsive</li>
-  <li>It will display three posts per page (will_paginate)</li>
-  <li>Image uploader (carrierwave)</li>
-  <li>Responsiviness (bootstrap)</li>
-  <li>User (devise)</li>
-  <li>Contact</li>
-  <li>Contact form</li>
-  <li>Sendgrid</li>
-</ul>
-
-<p>For github repo:</p>
-
-<p><a href="https://github.com/bruno78/personal-blog">https://github.com/bruno78/personal-blog</a></p>
-
-      </div>
-      <!-- Share Project -->
-<div class="container share-me">
-  <div class="row">
-    <div class="col-sm-12">
-      <p>Share</p>
-
-      <!-- Twitter -->
-      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Rails Blog by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-08-19-rails-blog.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
-
-      <!-- Facebook -->
-      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-08-19-rails-blog.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
-
-      <!-- Google Plus -->
-      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-08-19-rails-blog.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
-
-      <!-- LinkedIn -->
-      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-08-19-rails-blog.html&title=Rails Blog&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
-
-    </div>
-  </div>
-</div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-            
           
           
           

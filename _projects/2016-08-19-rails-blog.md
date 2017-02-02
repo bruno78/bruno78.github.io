@@ -1,7 +1,7 @@
 ---
 mod: 17
 title: Rails Blog
-featured: true
+featured: false
 category: programming
 link: https://bgtavares.herokuapp.com
 published: true
