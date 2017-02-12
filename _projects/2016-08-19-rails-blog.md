@@ -1,5 +1,5 @@
 ---
-mod: 17
+mod: 18
 title: Rails Blog
 featured: false
 category: programming
