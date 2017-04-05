@@ -45,7 +45,7 @@ While waiting for new photographs of the bar to be supplied by the client, it wa
 <div id="wrapper">
   <img class="img-responsive" src="{{ "/assets/img/therosemontnyc-evolution.png" | prepend: site.baseurl }}">
 </div>
-*trying to distance from the old design*
+*trying to distance from the old color palette*
 
 
 Also during the design process, the manager changed his mind on the general concept, he no longer wanted to retain jazz nights but instead simply become a gay/queer friendly bar every night of the week. No more “classy”, instead he wanted the website to convey a “vibrant and fun” atmosphere.
