@@ -1,6 +1,6 @@
 ---
 mod: 24
-title: The Rosemont NYC Bar
+title: The Rosemont NYC Bar Website
 featured: true
 category: programming
 link: http://therosemontnyc.com

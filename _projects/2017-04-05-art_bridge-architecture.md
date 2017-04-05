@@ -1,6 +1,6 @@
 ---
 mod: 25
-title: Art_Bridge Architecture
+title: Art_Bridge Architecture Website
 featured: true
 category: programming
 link: http://artbridgearchitecture.com
