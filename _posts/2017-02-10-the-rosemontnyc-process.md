@@ -25,18 +25,18 @@ The client wanted to rebrand their existing jazz bar to become a gay bar with ja
 
 ### Problems:
 
-* The website had too much scrolling on the front page.
-* The client wanted to make sure people would come to the website and immediately see the - drink menu.
-* Information wasn’t being displayed clearly and correctly.
+* - The website had too much scrolling on the front page.
+* - The client wanted to make sure people would come to the website and immediately see the - drink menu.
+* - Information wasn’t being displayed clearly and correctly.
 
 ### Possible Solutions:
 
-* Transfer the music listings to a separate events page.
-* Put a detailed drink menu on the front page.
-* Distribute information in the proper locations.
-* Add a header containing the logo and hours.
-* Display content on a jumbotron, with drink menu on homepage, and a navigation bar to about and events.
-* Add a footer containing access to social-media, with bar phone number and email address.  
+* - Transfer the music listings to a separate events page.
+* - Put a detailed drink menu on the front page.
+* - Distribute information in the proper locations.
+* - Add a header containing the logo and hours.
+* - Display content on a jumbotron, with drink menu on homepage, and a navigation bar to about and events.
+* - Add a footer containing access to social-media, with bar phone number and email address.  
 
 ### Design Evolution:
 
