@@ -1,7 +1,7 @@
 ---
 layout: post
-title: The Rosemont NYC bar website
-blurb: A closer look in the process of making the bar's website
+title: The Rosemont NYC Bar
+blurb: A closer look in the process of developing the bar's website
 date: 2017-02-10
 published: true
 tags:
@@ -16,27 +16,27 @@ tags:
 
 The client wanted to rebrand their existing jazz bar to become a gay bar with jazz nights and so needed a new website that would convey the new direction. The rebranding, general look and functionality of the new website, would need to continue to appeal to the older jazz crowd while drawing new and younger gay patrons. They also wanted the new website to feature their new events schedule: Jazz performances on Tuesdays, drag shows on Wednesdays and Saturdays, Queer/Rock’n’Roll music on Fridays, and art shows on Sundays. In general, the idea was to create a “classy but edgy” new persona and website for the bar that would appeal to art loving patrons of both jazz and gay culture.
 
-#### Important Client Statements:
+### Important Client Statements:
 1. Initially, “Owners were switching from a jazz bar to a mix jazz bar/queer friendly bar - keep it classy”
 2. During development, “Owners wanted to gradually end the jazz bar and become a gay bar”
 3. “They wanted a website to display the bar schedule, environment, people and backyard”
 4. “The current website had too much scrolling”
 5. “They wanted the drink menu displayed prominently on the front page”
 
-#### Problems:
+### Problems:
 
-- The website had too much scrolling on the front page.
-- The client wanted to make sure people would come to the website and immediately see the - drink menu.
-Information wasn’t being displayed clearly and correctly.
+* The website had too much scrolling on the front page.
+* The client wanted to make sure people would come to the website and immediately see the - drink menu.
+* Information wasn’t being displayed clearly and correctly.
 
-#### Possible Solutions:
+### Possible Solutions:
 
-- Transfer the music listings to a separate events page.
-- Put a detailed drink menu on the front page.
-- Distribute information in the proper locations.
-- Add a header containing the logo and hours.
-- Display content on a jumbotron, with drink menu on homepage, and a navigation bar to about and events.
-- Add a footer containing access to social-media, with bar phone number and email address.  
+* Transfer the music listings to a separate events page.
+* Put a detailed drink menu on the front page.
+* Distribute information in the proper locations.
+* Add a header containing the logo and hours.
+* Display content on a jumbotron, with drink menu on homepage, and a navigation bar to about and events.
+* Add a footer containing access to social-media, with bar phone number and email address.  
 
 ### Design Evolution:
 

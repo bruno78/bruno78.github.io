@@ -34,3 +34,5 @@ A new responsive and rebranded website with all the basic information in the fro
 
 The Rosemont NYC:
 [<img class="img-responsive" src="{{ "/assets/img/therosemontnyc.png" | prepend: site.baseurl }}">](http://therosemontnyc.com)
+
+If you are interested in reading more about the process click [here](http://brunogtavares.com/2017/02/10/the-rosemontnyc-process.html)
