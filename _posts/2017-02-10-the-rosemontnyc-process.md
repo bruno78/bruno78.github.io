@@ -66,8 +66,8 @@ The about’s page has another full screen photograph in the background showing 
 The Contact’s page has the same background as the about’s page. It contains a contact form so users can put their info and send a message. There is also a map showing the location of the bar.
 
 <div id="wrapper">
-  <img class="img-responsive" src="{{ "/assets/img/therosemontnyc.png" | prepend: site.baseurl }}">
+  <img class="img-responsive" src="{{ "/assets/img/therosemontnyc-admin.png" | prepend: site.baseurl }}">
 </div>
-*content management interface*
+*instructions to customize the content*
 
 Lastly, I created a user friendly content management interface, for each page. The interface allows the client to change photos and written information as wanted, able to update events and keep the website as lively as the bar itself. This also minimized any ongoing website maintenance costs.
