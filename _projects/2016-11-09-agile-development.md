@@ -1,7 +1,7 @@
 ---
 mod: 23
 title: Kitchen Helper - Agile Development
-featured: true
+featured: false
 category: programming
 published: true
 date: 2016-11-09
