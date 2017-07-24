@@ -29,6 +29,11 @@ The client wanted to rebrand their existing jazz bar to become a gay bar with ja
 * - The client wanted to make sure people would come to the website and immediately see the - drink menu.
 * - Information wasn’t being displayed clearly and correctly.
 
+<div id="wrapper">
+  <img class="img-responsive" src="{{ "/assets/img/old-rosemontnyc.png" | prepend: site.baseurl }}">
+</div>
+*old website*
+
 ### Possible Solutions:
 
 * - Transfer the music listings to a separate events page.
