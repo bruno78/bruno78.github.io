@@ -30,9 +30,9 @@ The client wanted to rebrand their existing jazz bar to become a gay bar with ja
 * - Information wasn’t being displayed clearly and correctly.
 
 <div id="wrapper">
-  <img class="img-responsive" src="{{ "/assets/img/old-rosemontnyc.png" | prepend: site.baseurl }}">
+  <img class="img-responsive" style="width: 100%;" src="{{ "/assets/img/old-rosemontnyc.png" | prepend: site.baseurl }}">
 </div>
-*old website*
+*old website (each block is what is displayed on the screen as you scroll down)*
 
 ### Possible Solutions:
 
