@@ -12,8 +12,6 @@ tags:
  - Components
 ---
 
-# A faster way to create Angular components from templates
-
 Today I'm going to show a very useful tool that might help you to speed up your process in creating your Angular applications.
 
 When working with one page template like Bootstrap or mockups, the task of creating each individual component, and then cutting and pasting each template section can become cumbersome. Imagine if you're using Angular-cli, and for each component you have to issue a ``` ng g component my-new-component ``` command plus cut and paste? Isn't there an easier way? Yes! That's when create-angular-components tool comes into action.  
