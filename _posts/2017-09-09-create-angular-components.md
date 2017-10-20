@@ -88,11 +88,11 @@ Note: I decided to call it template.html instead of index.html not to confuse wi
 
 As you can see, it's structured in these following sections:
 
-* - nav
-* - section
-  * - about
-  * - portfolio content
-* - footer
+* \- nav
+* \- section
+  * \- about
+  * \- portfolio content
+* \- footer
 
 Those are the parts I want to transform into components and subcomponents.
 
@@ -122,6 +122,7 @@ Looking at the final result of your folder tree, you should have:
 <div id="wrapper">
   <img class="img-responsive" src="{{ "/assets/img/cac-treefinalresult.png" | prepend: site.baseurl }}">
 </div>
+
 
 Looking at ``` about.component.html ``` you should see all the content of the about from your template:
 
