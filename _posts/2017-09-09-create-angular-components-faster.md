@@ -74,8 +74,7 @@ Note: I decided to call it template.html instead of index.html so not to confuse
     <h2> This is Portfolio content </h2>
     <p> A brief description </p>
   </div>
-
-  <div class="Portfolio-content-2"></div>
+  
 </section>
 
 <footer>
