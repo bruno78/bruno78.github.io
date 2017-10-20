@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating-Angular-Components tool 
+title: Creating-Angular-Components tool
 blurb: A faster way to create Angular components from templates
 date: 2017-09-09
 published: true
@@ -31,7 +31,7 @@ npm install -g create-angular-components
 So far this is the basic tree structure of my angular application
 
 <div id="wrapper">
-  <img class="img-responsive" src="{{ "/assets/img/init-tree-structure.png" | prepend: site.baseurl }}">
+  <img class="img-responsive" src="{{ "/assets/img/cac-init-tree-structure.png" | prepend: site.baseurl }}">
 </div>
 
 ### Using the template file
@@ -88,11 +88,11 @@ Note: I decided to call it template.html instead of index.html not to confuse wi
 
 As you can see, it's structured in these following sections:
 
-* nav
-* section
-  * about
-  * portfolio content
-* footer
+* - nav
+* - section
+  * - about
+  * - portfolio content
+* - footer
 
 Those are the parts I want to transform into components and subcomponents.
 
@@ -101,7 +101,7 @@ Those are the parts I want to transform into components and subcomponents.
 Now, all we have to do is mark up the html elements we want to transform into components by adding ``` data-component="ComponentName" ```. Don't forget: use CamelCase!
 
 <div id="wrapper">
-  <img class="img-responsive" src="{{ "/assets/img/markedupfile.png" | prepend: site.baseurl }}">
+  <img class="img-responsive" src="{{ "/assets/img/cac-markedupfile.png" | prepend: site.baseurl }}">
 </div>
 
 ### Firing up the command
@@ -120,7 +120,7 @@ et voila! If everything runs successfully you will see a message stating that 5 
 Looking at the final result of your folder tree, you should have:
 
 <div id="wrapper">
-  <img class="img-responsive" src="{{ "/assets/img/treefinalresult.png" | prepend: site.baseurl }}">
+  <img class="img-responsive" src="{{ "/assets/img/cac-treefinalresult.png" | prepend: site.baseurl }}">
 </div>
 
 Looking at ``` about.component.html ``` you should see all the content of the about from your template:
