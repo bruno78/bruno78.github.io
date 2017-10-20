@@ -113,7 +113,7 @@ cd my-app
 cac template.html
 ```
 _...drum roll..._
-et voila! If everything runs successfully you will see a message stating that 5 components were generated (3 components and 2 subcomponents) into ``` /Users/user-name/my-app/src/app ```.
+et voilá! If everything runs successfully you will see a message stating that 5 components were generated (3 components and 2 subcomponents) into ``` /Users/user-name/my-app/src/app ```.
 
 Looking at the final result of your folder tree, you should have:
 
