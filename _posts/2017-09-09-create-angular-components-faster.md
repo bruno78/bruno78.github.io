@@ -44,44 +44,9 @@ my-app
 ```
 Note: I decided to call it template.html instead of index.html so not to confuse the file with the same name on the src folder. But you can call it anything you want.
 
-```html
-
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-  <!-- content omitted for brevity -->
-</head>
-<nav class="navbar">
-     <ul>
-       <li>
-         <a class="nav-link" href="#about">About</a>
-       </li>
-       <li>
-         <a class="nav-link" href="#services">Services</a>
-       </li>
-     </ul>
-</nav>
-
-<section class="portfolio">
-  <h1> Welcome to My Portfolio Page </h1>
-
-  <div class="about">
-    <h2>About me</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  </div>
-
-  <div class="Portfolio-content-1">
-    <h2> This is Portfolio content </h2>
-    <p> A brief description </p>
-  </div>
-  
-</section>
-
-<footer>
-  <p> Copyrights </p>
-</footer>
-
-```
+<div id="wrapper">
+  <img class="img-responsive" src="{{ "/assets/img/cac-templatefile.png" | prepend: site.baseurl }}">
+</div>
 
 As you can see, it's structured in these following sections:
 
@@ -111,8 +76,8 @@ In the command line, if you are not on your app's root folder:
 cd my-app
 cac template.html
 ```
-_...drum roll..._
-et voilá! If everything runs successfully you will see a message stating that 5 components were generated (3 components and 2 subcomponents) into ``` /Users/user-name/my-app/src/app ```.
+_...drum roll...
+et voilá!_ If everything runs successfully you will see a message stating that 5 components were generated (3 components and 2 subcomponents) into ``` /Users/user-name/my-app/src/app ```.
 
 Looking at the final result of your folder tree, you should have:
 
@@ -149,4 +114,6 @@ Not only does it generate a folder with the name you've specified in the data-co
 
 Also your template.html file remains intact. You can either remove it or redo your components whenever you want.
 
-Well, that's it for today. A big thank you to Alexey Okhrimenko (@aiboy on Github) for creating this great tool, and if you want to visit his github page or see the repo, please go [here](https://github.com/aiboy/create-angular-components).
+Well, that's it for today. The repo for this demonstration can be found [here](https://github.com/bruno78/cac-app).
+
+A big thank you to Alexey Okhrimenko (@aiboy on Github) for creating this great tool, and if you want to visit his github page or see the repo, please go [here](https://github.com/aiboy/create-angular-components).
