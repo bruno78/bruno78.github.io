@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Creating-Angular-Components tool
+title: Create-Angular-Components Tool
 blurb: A faster way to create Angular components from templates
 date: 2017-09-09
-published: false
+published: true
 tags:
  - Angular-cli
  - Angular
@@ -12,29 +12,29 @@ tags:
  - Components
 ---
 
-Today I'm going to show a very useful tool that might help you to speed up your process in creating your Angular applications.
+I'm going to demonstrate a useful tool that will help you speed up your process when creating Angular applications.
 
-When working with one page template like Bootstrap or mockups, the task of creating each individual component, and then cutting and pasting each template section can become cumbersome. Imagine if you're using Angular-cli, and for each component you have to issue a ``` ng g component my-new-component ``` command plus cut and paste? Isn't there an easier way? Yes! That's when create-angular-components tool comes into action.  
+When working with mockups or one page templates like Bootstrap, the task of creating each individual component, and then cutting and pasting each template section, can become cumbersome. Imagine if you're using Angular-cli, and for each component you have to issue a ``` ng g component my-new-component ``` command plus cut and paste. Is there an easier way? Yes! That's when the create-angular-components tool comes into action.  
 
-### First things first
+### First Things First
 
 For this demonstration, I'm assuming you already have angular-cli and/or have your Angular app installed. If not, please follow these [steps](https://github.com/angular/angular-cli#generating-components-directives-pipes-and-services).
 
-Once you have your application up and running, let's install Create Angular Components tool:
+Once you have your application up and running, let's install the create-angular-components tool:
 
 ```bash
 npm install -g create-angular-components
 ```
 
-So far this is the basic tree structure of my angular application
+If you've followed the steps above accurately, your Angular application tree structure should be similar to my below structure.
 
 <div id="wrapper">
   <img class="img-responsive" src="{{ "/assets/img/cac-init-tree-structure.png" | prepend: site.baseurl }}">
 </div>
 
-### Using the template file
+### Using the Template File
 
-Here's a very simple example of a html mockup or one page template, that I copied to the app folder:
+Here's a very simple example of a html mockup or one page template that I copied to the app folder:
 
 ```
 my-app
@@ -42,7 +42,7 @@ my-app
       └── app
           └── template.html
 ```
-Note: I decided to call it template.html instead of index.html not to confuse with the file with same name on src folder, but you can call it anything you want.
+Note: I decided to call it template.html instead of index.html so not to confuse the file with the same name on the src folder. But you can call it anything you want.
 
 ```html
 
@@ -62,7 +62,7 @@ Note: I decided to call it template.html instead of index.html not to confuse wi
      </ul>
 </nav>
 
-<section class"portfolio">
+<section class="portfolio">
   <h1> Welcome to My Portfolio Page </h1>
 
   <div class="about">
@@ -92,9 +92,9 @@ As you can see, it's structured in these following sections:
   * \- portfolio content
 * \- footer
 
-Those are the parts I want to transform into components and subcomponents.
+The above html elements are the parts I want to transform into components and subcomponents.
 
-### Setting up
+### Setting Up
 
 Now, all we have to do is mark up the html elements we want to transform into components by adding ``` data-component="ComponentName" ```. Don't forget: use CamelCase!
 
@@ -102,7 +102,7 @@ Now, all we have to do is mark up the html elements we want to transform into co
   <img class="img-responsive" src="{{ "/assets/img/cac-markedupfile.png" | prepend: site.baseurl }}">
 </div>
 
-### Firing up the command
+### Firing Up the Command
 
 Once all elements are marked with data-component attributes, it's time to issue the command.
 
@@ -121,8 +121,7 @@ Looking at the final result of your folder tree, you should have:
   <img class="img-responsive" src="{{ "/assets/img/cac-treefinalresult.png" | prepend: site.baseurl }}">
 </div>
 
-
-Looking at ``` about.component.html ``` you should see all the content of the about from your template:
+Looking at ``` about.component.html ``` you should see all the content of the 'about' from your template:
 
 ```html
 <div class="about">
@@ -132,7 +131,7 @@ Looking at ``` about.component.html ``` you should see all the content of the ab
 
 ```
 
-This is your about.component.ts ready to be populated:
+This is your about.component.ts with the started code ready to be populated:
 
 ```javascript
 import { Component } from '@angular/core';
@@ -147,8 +146,8 @@ export class AboutComponent {
 }
 
 ```
-Not only it generates a folder with the name you've specified in the data-component attribute, including the TypeScript file, css file, html file with your content, but also the unit test file. Pretty cool, eh?
+Not only does it generate a folder with the name you've specified in the data-component attribute, including the TypeScript file, css file, html file with your content, but also the unit test file. Pretty cool, eh?
 
 Also your template.html file remains intact. You can either remove it or redo your components whenever you want.
 
-Well, this is it for today. A big thanks to Alexey Okhrimenko (@aiboy on Github) for creating this great tool, and if you want visit his github page or see the repo, please go [here](https://github.com/aiboy/create-angular-components)
+Well, that's it for today. A big thank you to Alexey Okhrimenko (@aiboy on Github) for creating this great tool, and if you want to visit his github page or see the repo, please go [here](https://github.com/aiboy/create-angular-components).
