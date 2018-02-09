@@ -2,7 +2,7 @@
 mod: 27
 title: Baby names data
 category: Software Engineering
-featured: true
+featured: false
 column: 2
 published: true
 date: 2017-08-18
