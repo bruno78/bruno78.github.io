@@ -1,15 +1,15 @@
 ---
 mod: 19
 title: ReactJS Single Page Application
+category: Web Development, Front End
 featured: false
-category: programming
+column: 1
 published: true
 date: 2016-08-23
 excerpt_separator: <!-- excerpt -->
 tags:
-  - ReactJS
-  - javascript
-  - Web Development
+  - React
+  - JavaScript
 ---
 A Single Page Application created on ReactJs
 <!-- excerpt -->

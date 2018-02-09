@@ -1,16 +1,16 @@
 ---
 mod: 23
 title: Kitchen Helper - Agile Development
+category: Agile Development
 featured: false
-category: programming
+column: 3
 published: true
 date: 2016-11-09
 excerpt_separator: <!-- excerpt -->
 tags:
-  - Agile development
+  - Agile Development
   - Design Thinking
   - Prototyping
-  - Programming
 ---
 For this project, I created the first steps of a software development.
 <!-- excerpt -->

@@ -1,8 +1,9 @@
 ---
 mod: 24
 title: The Rosemont NYC Bar Website
+category: Full Stack, Web development, Back End, CMS
 featured: true
-category: programming
+column: 2
 link: http://therosemontnyc.com
 published: true
 date: 2017-01-31
@@ -10,7 +11,9 @@ excerpt_separator: <!-- excerpt -->
 tags:
   - WordPress
   - PHP
-  - Web development
+  - Sass
+  - html 
+  - MySQL
 ---
 
 The owners of The Rosemont NYC in Williamsburg, Brooklyn NY, decided to change their bar from a jazz bar to a Queer/gay bar, offering affordable drinks, queer rock parties, drag queen shows, and other events every week.

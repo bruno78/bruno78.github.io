@@ -1,15 +1,17 @@
 ---
 mod: 21
 title: About this Website
+category: Web Development, CMS, Front End
 featured: false
-category: programming
+column: 2
 published: true
 date: 2016-09-06
 excerpt_separator: <!-- excerpt -->
 tags:
   - Jekyll
   - Ruby
-  - Web Development
+  - JQuery
+  - JavaScript
 ---
 
 This website was created with Jekyll, a static site generator.

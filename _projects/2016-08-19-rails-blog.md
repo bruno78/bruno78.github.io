@@ -1,16 +1,17 @@
 ---
 mod: 18
 title: Rails Blog
+category: Web Development, Full Stack, Back End
 featured: false
-category: programming
+column: 2
 link: https://bgtavares.herokuapp.com
 published: true
 date: 2016-08-22
 excerpt_separator: <!-- excerpt -->
 tags:
-  - Rails
+  - Ruby on Rails
   - Ruby
-  - Web development
+  - SQLite
 ---
 
 A blog created on Rails 4.2.5 filled with great features

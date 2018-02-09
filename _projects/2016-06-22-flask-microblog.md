@@ -1,15 +1,15 @@
 ---
 mod: 17
 title: Flask Microblog
+category: Web Development, Full Stack
 featured: false
-category: programming
+column: 3
 published: true
 date: 2016-08-23
 excerpt_separator: <!-- excerpt -->
 tags:
   - Flask
   - Python
-  - Web Development
 ---
 
 Microblog created using Flask

@@ -121,9 +121,11 @@ header {
   }
 }
 p.about{
-    text-align: justify;
-    color: #333; // #EDEDED;
-    font: 11pt 'Muli', sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #646464; //color: #333; // #EDEDED;
+    font: 16pt 'Playfair Display', sans-serif;
+    font-style: italic;
     margin-bottom: 50px;
     display: block;
     width: 83%;
@@ -133,7 +135,7 @@ p.about{
 }
 span.redish {padding: 0; color: #f83265;}
 
-.find-me {
+.find-me, .also-here {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 100%;
@@ -156,7 +158,18 @@ span.redish {padding: 0; color: #f83265;}
     text-decoration: none;
   }
 }
+.also-here {
+  i {
+    font-size: 50px;
+    padding: 20px;
+  }
+};
 
+.box-tag {
+  font-size: 16px;
+  margin-top: 10px;
+  color: #646464;
+}
 @media (max-width: 992px){
   .hello {
     border-right: none;

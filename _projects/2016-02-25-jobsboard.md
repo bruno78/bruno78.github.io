@@ -1,15 +1,16 @@
 ---
 mod: 14
 title: Jobs Board
+category: Web Development, Full Stack
 featured: false
-category: programming
+column: 3
 published: true
 date: 2016-05-19
 excerpt_separator: <!-- excerpt -->
 tags:
- - Rails
+ - Ruby on Rails
  - Ruby
- - Web Development
+ - SQLite
 ---
 
 A jobsboard application

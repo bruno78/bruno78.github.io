@@ -9,6 +9,8 @@ url: "http://bruno78.github.io"
 collections:
   projects:
     output: true
+  other-projects:
+    output: true
 
 sass:
   sass_dir: _sass

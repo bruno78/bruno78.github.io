@@ -1,15 +1,17 @@
 ---
 mod: 13
 title: Recipe Finder
+category: Web Development, Full Stack, API
 featured: false
-category: programming
-published: false
+column: 1
+published: true
 date: 2016-01-19
 excerpt_separator: <!-- excerpt -->
 tags:
   - Rails
   - Ruby
-  - Web Development
+  - Food2Fork API  
+  - SQLite
 ---
 
 This is a Recipe Finder App using Ruby on Rails and Food2Fork API.

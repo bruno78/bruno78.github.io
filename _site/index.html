@@ -55,6 +55,9 @@
                 <li>
                   <a href="/contact.html">Contact</a>
                 </li>
+                <li>
+                  <a href="/other-projects.html">Other Projects</a>
+                </li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -81,50 +84,75 @@
         <img src="/assets/img/cover-pic.png" class="cover img-responsive">
       </div>
     </div>
+    <div class="col-md-12">
+      <p class="about">
+       I am a software engineer passionate in designing and creating smart applications. <br>
+       When I'm not programming, you may find me playing music or cooking.
+     </p>
+    </div>
     <div class="col-md-6 hello">
       <p class="lead">
-        <span><span class="redish">hello</span> there!</span>
+        <span>I'm also <span class="redish">here</span></span>
       </p>
-      <p class="about">
-        <strong id='stronger'>I am a programmer with a bachelor's degree in Psychology who's passionate about web development and data analysis.</strong> I work at an architectural firm where I produce PR videos, draft from time to time, and am currently working on their new website. I am also a photographer and musician that plays lute, ukulele, and guitar. Whether coding, analyzing data or creating websites, or simply enjoying some free time playing Early music or Caetano Veloso, I find that a dedication to technical proficiency is a must if you hope to produce something beautiful. Combining my knowledge of music, art, and Psychology, with my love of programming and data analysis, has been life-affirming.
-      </p>
+      <div class="also-here">
+        <!-- Github -->
+        <a onclick="javascript:window.open('https://github.com/bruno78', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-github-alt"></i></a>
+        <!-- Codepen -->
+        <a onclick="javascript:window.open('http://codepen.io/bruno78', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-codepen"></i></a>
+        <!-- Glitch -->
+        <!--a onclick="javascript:window.open('https://glitch.com/@bruno78', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-glitch"></i></a-->
+        <!-- LinkedIn -->
+        <a onclick="javascript:window.open('https://www.linkedin.com/in/bgtavares', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+      </div>
     </div>
-    <div class="class col-md-6">
+    <div class="col-md-6">
       <p class="lead">featured <span class="redish">projects</span></p>
       <ul>
         
         
           
+          
+          
+          
+          
+          
+          
             <li>
-              <h3><a href="#" data-toggle="modal" data-target="#myModal-23">The Rosemont NYC Bar</a></h3>
-              <p><p>The owners of The Rosemont NYC in Williamsburg, Brooklyn NY, decided to change their bar from a jazz bar to a Queer/gay bar, offering affordable drinks, queer rock parties, drag queen shows, and other events every week.</p>
+              <h3><a href="#" data-toggle="modal" data-target="#myModal-28">Maps With Graphs</a></h3>
+              <p class="box-tag">
+                Java and Google Maps API
+              </p>
+              <p><p>This program calculates and analyses, the process of finding the path between two points in a map using 3 different algorithms.</p>
 
 </p>
             </li>
-            <div class="modal fade" id="myModal-23" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal fade" id="myModal-28" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h2 class="modal-title" id="myModalLabel">The Rosemont NYC Bar</h2>
+        <h2 class="modal-title" id="myModalLabel">Maps With Graphs</h2>
       </div>
       <div class="modal-body">
-        <p>The owners of The Rosemont NYC in Williamsburg, Brooklyn NY, decided to change their bar from a jazz bar to a Queer/gay bar, offering affordable drinks, queer rock parties, drag queen shows, and other events every week.
+        <p>This program calculates and analyses, the process of finding the path between two points in a map using 3 different algorithms.
 <!-- excerpt -->
-The owners wanted a website that would reflect these changes, all info easy to access, “no long scrolling” sic, and easy to maintain themselves without monthly costs to have someone else update the info.</p>
+For this program, 3 algorithms were implemented</p>
 
-<p><strong>The Process:</strong></p>
+<ol>
+  <li>Breadth Depth Search</li>
+  <li>Dijkstra</li>
+  <li>A* (A Star)</li>
+</ol>
 
-<p>The old website was built on WordPress. After I created the mockup and presented for approval, I designed the basic layout using html/sass, then migrated to WordPress as new template and finished designing the rest of the pages. The following plugins were used: 1. Bootstrap helper for the menu (wp_bootstrap_navwalker); 2. Ninja Forms for the contact form; 3. Meta slider for slideshows; 4. Tockify Events Calendar for the events page; and, 5. WP Dashboard Notes to create the “Help” documentation on the dashboard. I also created customized settings so the owners could change the side menu without dealing with html code, plus wrote the “Help” section to guide the owners when making changes. Lastly, I took and edited photographs and video for the website.</p>
+<p>Once the algorithm is selected, it displays on the map all the nodes (intersections) that the algorithm is using to search the shortest path. At the end for the result, it tells the user how many nodes it used to search to get to the user.</p>
 
-<p><strong>The Result:</strong></p>
+<p>For the A* algorithm, the Euclidian distance was selected to find the shortest path, making more efficient than Dijkstra.</p>
 
-<p>A new responsive and rebranded website with all the basic information in the front page with and easy navigation through the other pages.</p>
+<p>The purpose of this program was solely to demonstrate the difference between the three algorithms and how efficient they are.</p>
 
-<p>The Rosemont NYC:
-<a href="http://therosemontnyc.com"><img class="img-responsive" src="/assets/img/therosemontnyc.png" /></a></p>
+<p>More on github: https://github.com/bruno78/maps-with-graphs</p>
 
       </div>
       <!-- Share Project -->
@@ -134,7 +162,221 @@ The owners wanted a website that would reflect these changes, all info easy to a
       <p>Share</p>
 
       <!-- Twitter -->
-      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=The Rosemont NYC Bar by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Maps With Graphs by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2017-11-10-maps-with-graphs.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2017-11-10-maps-with-graphs.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2017-11-10-maps-with-graphs.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2017-11-10-maps-with-graphs.html&title=Maps With Graphs&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            
+          
+          
+            <li>
+              <h3><a href="#" data-toggle="modal" data-target="#myModal-27">Baby names data</a></h3>
+              <p class="box-tag">
+                Java and CSV
+              </p>
+              <p><p>A ranking based program that gives insights on baby names.</p>
+
+</p>
+            </li>
+            <div class="modal fade" id="myModal-27" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Baby names data</h2>
+      </div>
+      <div class="modal-body">
+        <p>A ranking based program that gives insights on baby names.
+<!-- excerpt --></p>
+
+<p>This program takes a sorted data in CSV format and through a series of methods implementations, gives you insight on baby names, for example: WhatIsNameInYear where what would your name be if you were born in a different year just by comparing the names’ ranks.</p>
+
+<p>More on Github: https://github.com/bruno78/baby-names-data</p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Baby names data by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2017-08-18-baby-names-data.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2017-08-18-baby-names-data.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2017-08-18-baby-names-data.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2017-08-18-baby-names-data.html&title=Baby names data&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            
+          
+          
+          
+          
+            <li>
+              <h3><a href="#" data-toggle="modal" data-target="#myModal-25">Art_Bridge Architecture Website</a></h3>
+              <p class="box-tag">
+                Laravel, PHP, JavaScript, jQuery, and MySQL
+              </p>
+              <p><p>As the architectural firm had grown over the last few years and had completed more high-end design projects, they needed an expanded website to better feature their work.</p>
+
+</p>
+            </li>
+            <div class="modal fade" id="myModal-25" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">Art_Bridge Architecture Website</h2>
+      </div>
+      <div class="modal-body">
+        <p>As the architectural firm had grown over the last few years and had completed more high-end design projects, they needed an expanded website to better feature their work.
+<!-- excerpt -->
+The website was changed from a single home page with contact info to a full web application featuring the firm’s diverse scope of work, as well as, a vision page, about page, and contact page.</p>
+
+<p>The website was a collaboration between myself and Art Bride Architecture’s director of design. I transformed the director’s ideas into code, working back-and-forth on the final design layouts, implementing best solutions for problems along the way, developing the entire site using PHP’s Laravel 5.4 framework.</p>
+
+<p><strong>Process:</strong></p>
+
+<p>The firm’s old website was a single page in html with a title, a single project photo centered on the page, and a list of staff names (under the photo) with basic contact info. The director of design presented his ideas for the new website. The overall structure consisted of: 1. Front-page; 2. Work page; 3. About page; 4. Vision page; and 5. Contact page.</p>
+
+<p>Since I had began my programming studies as a Ruby on Rails developer, I thought of using Rails, but the firm’s web hosting service, Hostmonster, only accepted version 3 of Rails. Since 3 had security issues, we needed to find a more suitable framework. I then thought we should use a content management system, like WordPress or Drupal, but soon realized we needed something more flexible and customizable. Knowing that Hostmonster worked well with PHP, and after some research and discussions with the director, we concluded that using Laravel 5.4 would be the best solution.</p>
+
+<p>During the development process, I suggested adding an administration page so work page content could be more easily changed when needed by the user, which the director loved. Voyager proved a nice solution for the “missing” admin interface page. Thus I implemented the admin form for both the work page images and the work popups.  For Voyager issues, I used a Slack chat group dedicated to solving Voyager issues, which proved very helpful.</p>
+
+<p><strong>Result:</strong></p>
+
+<p>I used a MySQL database to store all the content and display images/work info. The website is also fully responsive. ABA’s director is very happy with his being able to easily add/change projects whenever wanted. The final website is visually dynamic and engaging, yet simple and intuitive (user friendly), and beautifully displays all the firm’s new work.</p>
+
+<p>Art_Bridge Architecture PLLC:
+<a href="http://artbridgearchitecture.com"><img class="img-responsive" src="/assets/img/art_bridge_website.png" /></a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Art_Bridge Architecture Website by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2017-04-05-art_bridge-architecture.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
+
+      <!-- Facebook -->
+      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2017-04-05-art_bridge-architecture.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
+
+      <!-- Google Plus -->
+      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2017-04-05-art_bridge-architecture.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
+
+      <!-- LinkedIn -->
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2017-04-05-art_bridge-architecture.html&title=Art_Bridge Architecture Website&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+
+    </div>
+  </div>
+</div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+            
+          
+          
+            <li>
+              <h3><a href="#" data-toggle="modal" data-target="#myModal-24">The Rosemont NYC Bar Website</a></h3>
+              <p class="box-tag">
+                WordPress, PHP, Sass, html, and MySQL
+              </p>
+              <p><p>The owners of The Rosemont NYC in Williamsburg, Brooklyn NY, decided to change their bar from a jazz bar to a Queer/gay bar, offering affordable drinks, queer rock parties, drag queen shows, and other events every week.</p>
+
+</p>
+            </li>
+            <div class="modal fade" id="myModal-24" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel">The Rosemont NYC Bar Website</h2>
+      </div>
+      <div class="modal-body">
+        <p>The owners of The Rosemont NYC in Williamsburg, Brooklyn NY, decided to change their bar from a jazz bar to a Queer/gay bar, offering affordable drinks, queer rock parties, drag queen shows, and other events every week.
+<!-- excerpt -->
+The owners wanted a website that would reflect these changes, all info easy to access, “no long scrollings” (client) , and easy to maintain themselves without monthly costs to have someone else update the info.</p>
+
+<p><strong>Process:</strong></p>
+
+<p>The old website was built on WordPress. After I created the mockup and presented for approval, I designed the basic layout using html/sass, then migrated to WordPress as new template and finished designing the rest of the pages. The following plugins were used: 1. Bootstrap helper for the menu (wp_bootstrap_navwalker); 2. Ninja Forms for the contact form; 3. Meta slider for slideshows; 4. Tockify Events Calendar for the events page; and, 5. WP Dashboard Notes to create the “Help” documentation on the dashboard. I also created customized settings so the owners could change the side menu without dealing with html code, plus wrote the “Help” section to guide the owners when making changes. Lastly, I took and edited photographs and video for the website.</p>
+
+<p>Techniques used:</p>
+
+<ul>
+  <li>interview</li>
+  <li>open/closed card sort</li>
+  <li>mockups</li>
+</ul>
+
+<p><strong>Result:</strong></p>
+
+<p>A new responsive and rebranded website with all the basic information in the front page with and easy navigation through the other pages.</p>
+
+<p>The Rosemont NYC:
+<a href="http://therosemontnyc.com"><img class="img-responsive" src="/assets/img/therosemontnyc.png" /></a></p>
+
+<p>If you are interested in reading more about the process click <a href="http://brunogtavares.com/2017/02/10/the-rosemontnyc-process.html">here</a></p>
+
+      </div>
+      <!-- Share Project -->
+<div class="container share-me">
+  <div class="row">
+    <div class="col-sm-12">
+      <p>Share</p>
+
+      <!-- Twitter -->
+      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=The Rosemont NYC Bar Website by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
 
       <!-- Facebook -->
       <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
@@ -143,7 +385,7 @@ The owners wanted a website that would reflect these changes, all info easy to a
       <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
 
       <!-- LinkedIn -->
-      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html&title=The Rosemont NYC Bar&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2017-01-31-the-rosemontnyc.html&title=The Rosemont NYC Bar Website&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
 
     </div>
   </div>
@@ -158,145 +400,6 @@ The owners wanted a website that would reflect these changes, all info easy to a
 
 
             
-          
-          
-            <li>
-              <h3><a href="#" data-toggle="modal" data-target="#myModal-22">Kitchen Helper - Agile Development</a></h3>
-              <p><p>This project was the final assignment from the course “Getting Started: Agile Development Meets Design Thinking” offered by University of Virginia on Coursera.</p>
-
-</p>
-            </li>
-            <div class="modal fade" id="myModal-22" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h2 class="modal-title" id="myModalLabel">Kitchen Helper - Agile Development</h2>
-      </div>
-      <div class="modal-body">
-        <p>This project was the final assignment from the course “Getting Started: Agile Development Meets Design Thinking” offered by University of Virginia on Coursera.
-<!-- excerpt -->
-For this project, I developed the first steps of a product: I wrote an introduction, brainstormed 5 personas, chose a persona and wrote about her life, how she thinks, sees, feel and does. Based on her story, I created a problem scenario where this persona tries to find a solution and gave a proposition that would solve the problem. Then I developed a user story that flowed from the persona, created a storyboard, developed a list of child stories with test cases (or features that would be implemented) and finally created a prototype, which displayed how the features were implemented. In this case, I designed a Kitchen Helper, a fictitious app that would help people in the kitchen with little or no cooking experience.</p>
-
-<p>The final assignement can be found <a href="https://drive.google.com/file/d/0B85Nw7t7guLiTDFOVHByQTVXdXM/view?usp=sharing">here</a></p>
-
-<p>The course can be taken <a href="https://www.coursera.org/learn/getting-started-agile">here</a></p>
-
-<p>My certificate can be found <a href="https://www.coursera.org/account/accomplishments/certificate/E427VN4785BS">here</a></p>
-
-      </div>
-      <!-- Share Project -->
-<div class="container share-me">
-  <div class="row">
-    <div class="col-sm-12">
-      <p>Share</p>
-
-      <!-- Twitter -->
-      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Kitchen Helper - Agile Development by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-11-09-agile-development.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
-
-      <!-- Facebook -->
-      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-11-09-agile-development.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
-
-      <!-- Google Plus -->
-      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-11-09-agile-development.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
-
-      <!-- LinkedIn -->
-      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-11-09-agile-development.html&title=Kitchen Helper - Agile Development&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
-
-    </div>
-  </div>
-</div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-            
-          
-          
-            <li>
-              <h3><a href="#" data-toggle="modal" data-target="#myModal-21">Americans' Views on Gun Control</a></h3>
-              <p><p>This project is part of <a href="https://www.coursera.org/learn/python-capstone"><em>Capstone: Retrieving, Processing, and Visualizing Data with Python</em></a> which is the 5th and last course of the <a href="https://www.coursera.org/specializations/python">Python for Everybody Specialization</a> by Michigan University offered on <a href="https://www.coursera.org">Coursera</a>.</p>
-
-</p>
-            </li>
-            <div class="modal fade" id="myModal-21" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-        <h2 class="modal-title" id="myModalLabel">Americans' Views on Gun Control</h2>
-      </div>
-      <div class="modal-body">
-        <p>This project is part of <a href="https://www.coursera.org/learn/python-capstone"><em>Capstone: Retrieving, Processing, and Visualizing Data with Python</em></a> which is the 5th and last course of the <a href="https://www.coursera.org/specializations/python">Python for Everybody Specialization</a> by Michigan University offered on <a href="https://www.coursera.org">Coursera</a>.
-<!-- excerpt --></p>
-
-<p>The project was divided in two parts:</p>
-
-<p><em>1st part: (which was part of the course)</em> Retrieve, process, visualize data and communicate the results, which was done entirely in Python with the visualization part in D3.js;</p>
-
-<p><em>2nd part: (which was not part of the course)</em> Compare the first dataset with another data set and create graphs done in R (for speed)</p>
-
-<p>More details about the entire process can be found <a href="https://github.com/bruno78/python-capstone-project#capstone-retrieving-processing-and-visualizing-data-with-python">here</a></p>
-
-<p>The final result of this project can be viewed <a href="http://brunogtavares.com/2016/09/16/gun-control-laws.html">America’s View on Gun Permits</a></p>
-
-<p>The code and data subsets can be viewed <a href="https://github.com/bruno78/python-capstone-project.git">here</a></p>
-
-<p>The certificate of the entire specialization can be viewed <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/34A6VHCWGN7C">here</a></p>
-
-      </div>
-      <!-- Share Project -->
-<div class="container share-me">
-  <div class="row">
-    <div class="col-sm-12">
-      <p>Share</p>
-
-      <!-- Twitter -->
-      <a onclick="javascript:window.open('https://twitter.com/intent/tweet?text=Americans' Views on Gun Control by Bruno G. Tavares - &url=http://127.0.0.1:4000//projects/2016-09-16-gunlaw-project.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-twitter"></i></a>
-
-      <!-- Facebook -->
-      <a onclick="javascript:window.open('https://facebook.com/sharer.php?u=http://127.0.0.1:4000//projects/2016-09-16-gunlaw-project.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-facebook"></i></a>
-
-      <!-- Google Plus -->
-      <a onclick="javascript:window.open('https://plus.google.com/share?url=http://127.0.0.1:4000//projects/2016-09-16-gunlaw-project.html', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-google-plus"></i></a>
-
-      <!-- LinkedIn -->
-      <a onclick="javascript:window.open('http://www.linkedin.com/shareArticle?mini=true&url=http://127.0.0.1:4000//projects/2016-09-16-gunlaw-project.html&title=Americans' Views on Gun Control&source=http://127.0.0.1:4000/', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
-
-    </div>
-  </div>
-</div>
-
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-            
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
           
           
           
@@ -338,7 +441,7 @@ For this project, I developed the first steps of a product: I wrote an introduct
   <div class="container find-me">
     <div class="row">
       <div class="col-md-12">
-        <p> &copy 2016 by Bruno G. Tavares. All rights reserved. </p>
+        <p> &copy 2018 by Bruno G. Tavares. All rights reserved. </p>
       </div>
     </div>
   </div>

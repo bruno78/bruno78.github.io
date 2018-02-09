@@ -1,8 +1,9 @@
 ---
 mod: 25
 title: Art_Bridge Architecture Website
+category: Full Stack, Back End, Web Development
 featured: true
-category: programming
+column: 1
 link: http://artbridgearchitecture.com
 published: true
 date: 2017-04-05
@@ -10,7 +11,9 @@ excerpt_separator: <!-- excerpt -->
 tags:
   - Laravel
   - PHP
-  - Web development
+  - JavaScript
+  - jQuery
+  - MySQL
 ---
 
 As the architectural firm had grown over the last few years and had completed more high-end design projects, they needed an expanded website to better feature their work.

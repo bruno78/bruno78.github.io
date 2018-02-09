@@ -5,54 +5,57 @@ title: Projects
 
 <div class="container">
   <div class="row">
-    <div class="col-md-4 hello">
-      <h4 class="lead">
-        <span><span class="redish">Programming</span></span>
-      </h4>
-      {% assign sorted_projects = site.projects | sort: date | reverse %}
-      <ul>
-      {% for project in sorted_projects %}
-        {% if project.category == "programming" %}
-        <li>
-          <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
-          <p>{{ project.excerpt }}</p>
-        </li>
-            {% include modal.html %}
-          {% endif %}
-        {% endfor %}
-      </u>
+    <div class="col-md-12">
+
     </div>
-    <div class="col-md-4 hello">
-      <h4 class="lead">
-        <span>Visual</span>
-      </h4>
-      <ul>
-      {% for project in sorted_projects %}
-        {% if project.category == "visual" %}
-        <li>
-          <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
-          <p>{{ project.excerpt }}</p>
-        </li>
-            {% include modal.html %}
-          {% endif %}
-        {% endfor %}
+    {% assign sorted_projects = site.projects | sort: date | reverse %}
+      <div class="col-md-4 hello">
+        <ul>
+          {% for project in sorted_projects %}
+            {% if project.column == 1 %}
+              <li>
+                <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
+                <p class="box-tag">
+                  {{ project.tags | array_to_sentence_string }}
+                </p>
+                <p>{{ project.excerpt }}</p>
+              </li>
+              {% include modal.html %}
+            {% endif %}
+          {% endfor %}
         </ul>
-    </div>
-    <div class="col-md-4 sound">
-      <h4 class="lead">
-        <span><span class="redish">Sound</span></span>
-      </h4>
-      <ul>
-      {% for project in sorted_projects %}
-        {% if project.category == "sound" %}
-        <li>
-          <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
-          <p>{{ project.excerpt }}</p>
-        </li>
-            {% include modal.html %}
-          {% endif %}
-        {% endfor %}
+      </div>
+      <div class="col-md-4 hello">
+        <ul>
+          {% for project in sorted_projects %}
+            {% if project.column == 2 %}
+              <li>
+                <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
+                <p class="box-tag">
+                  {{ project.tags | array_to_sentence_string }}
+                </p>
+                <p>{{ project.excerpt }}</p>
+              </li>
+              {% include modal.html %}
+            {% endif %}
+          {% endfor %}
         </ul>
-    </div>
+      </div>
+      <div class="col-md-4 sound">
+        <ul>
+          {% for project in sorted_projects %}
+            {% if project.column == 3 %}
+              <li>
+                <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
+                <p class="box-tag">
+                  {{ project.tags | array_to_sentence_string }}
+                </p>
+                <p>{{ project.excerpt }}</p>
+              </li>
+              {% include modal.html %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
   </div>
 </div>

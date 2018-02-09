@@ -1,0 +1,59 @@
+---
+layout: page
+title: Other Projects
+---
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 hello">
+      {% assign sorted_projects = site.other-projects | sort: date | reverse %}
+      <h4 class="lead">
+        <span><span class="redish">Visual</span></span>
+      </h4>
+      <ul>
+        {% for project in sorted_projects %}
+          {% if project.category == "visual" %}
+          <li>
+            <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
+            <p>{{ project.excerpt }}</p>
+          </li>
+              {% include modal.html %}
+            {% endif %}
+          {% endfor %}
+          </ul>
+      </u>
+    </div>
+    <div class="col-md-4 hello">
+      <h4 class="lead">
+        <span>Sound</span>
+      </h4>
+      <ul>
+      {% for project in sorted_projects %}
+        {% if project.category == "sound" %}
+        <li>
+          <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
+          <p>{{ project.excerpt }}</p>
+        </li>
+            {% include modal.html %}
+          {% endif %}
+        {% endfor %}
+        </ul>
+    </div>
+    <div class="col-md-4 sound">
+      <h4 class="lead">
+        <span><span class="redish">Miscellaneous</span></span>
+      </h4>
+      <ul>
+      {% for project in sorted_projects %}
+        {% if project.category == "miscellaneous" %}
+          <li>
+            <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
+            <p>{{ project.excerpt }}</p>
+          </li>
+              {% include modal.html %}
+        {% endif %}
+      {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

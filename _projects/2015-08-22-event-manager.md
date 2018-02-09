@@ -1,13 +1,13 @@
 ---
 mod: 11
 title: Event Manager
+category: Software Engineering, Script
 featured: false
-category: programming
+column: 3
 published: true
 date: 2015-08-22
 excerpt_separator: <!-- excerpt -->
 tags:
-  - Program
   - Ruby
 ---
 

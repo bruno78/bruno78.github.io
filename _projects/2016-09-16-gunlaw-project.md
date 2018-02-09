@@ -1,16 +1,16 @@
 ---
 mod: 22
 title: Americans' Views on Gun Control
-featured: true
-category: programming
+category: Data Science, Data Analysis, Script
+featured: false
+column: 1
 published: true
 date: 2016-09-06
 excerpt_separator: <!-- excerpt -->
 tags:
   - Python
-  - Programming
-  - Data Science
-  - Data analysis
+  - D3.JS
+  - R
 ---
 
 This project analyses how opinions on gun control laws have changed throughout the years in the United States.

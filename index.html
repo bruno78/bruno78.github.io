@@ -10,15 +10,28 @@ title: Bruno G. Tavares
         <img src="/assets/img/cover-pic.png" class="cover img-responsive">
       </div>
     </div>
+    <div class="col-md-12">
+      <p class="about">
+       I am a software engineer passionate in designing and creating smart applications. <br>
+       When I'm not programming, you may find me playing music or cooking.
+     </p>
+    </div>
     <div class="col-md-6 hello">
       <p class="lead">
-        <span><span class="redish">hello</span> there!</span>
+        <span>I'm also <span class="redish">here</span></span>
       </p>
-      <p class="about">
-        <strong id='stronger'>I am a programmer with a bachelor's degree in Psychology who's passionate about web development and data analysis.</strong> I work at an architectural firm where I produce PR videos, draft from time to time, and am currently working on their new website. I am also a photographer and musician that plays lute, ukulele, and guitar. Whether coding, analyzing data or creating websites, or simply enjoying some free time playing Early music or Caetano Veloso, I find that a dedication to technical proficiency is a must if you hope to produce something beautiful. Combining my knowledge of music, art, and Psychology, with my love of programming and data analysis, has been life-affirming.
-      </p>
+      <div class="also-here">
+        <!-- Github -->
+        <a onclick="javascript:window.open('https://github.com/bruno78', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-github-alt"></i></a>
+        <!-- Codepen -->
+        <a onclick="javascript:window.open('http://codepen.io/bruno78', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-codepen"></i></a>
+        <!-- Glitch -->
+        <!--a onclick="javascript:window.open('https://glitch.com/@bruno78', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-glitch"></i></a-->
+        <!-- LinkedIn -->
+        <a onclick="javascript:window.open('https://www.linkedin.com/in/bgtavares', '_blank', 'width=800, height=500, top=200, left=300');void(0);"><i class="fa fa-linkedin"></i></a>
+      </div>
     </div>
-    <div class="class col-md-6">
+    <div class="col-md-6">
       <p class="lead">featured <span class="redish">projects</span></p>
       <ul>
         {% assign sorted_projects = site.projects | sort: id | reverse %}
@@ -26,6 +39,9 @@ title: Bruno G. Tavares
           {% if project.featured %}
             <li>
               <h3><a href="#" data-toggle="modal" data-target="#myModal-{{ project.mod }}">{{ project.title }}</a></h3>
+              <p class="box-tag">
+                {{ project.tags | array_to_sentence_string }}
+              </p>
               <p>{{ project.excerpt }}</p>
             </li>
             {% include modal.html %}

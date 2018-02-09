@@ -6,9 +6,264 @@
 </description>
     <link>http://127.0.0.1:4000//</link>
     <atom:link href="http://127.0.0.1:4000//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 01 Feb 2017 19:17:34 -0500</pubDate>
-    <lastBuildDate>Wed, 01 Feb 2017 19:17:34 -0500</lastBuildDate>
+    <pubDate>Fri, 09 Feb 2018 01:09:43 -0500</pubDate>
+    <lastBuildDate>Fri, 09 Feb 2018 01:09:43 -0500</lastBuildDate>
     <generator>Jekyll v3.2.1</generator>
+    
+      <item>
+        <title>Create-Angular-Components Tool</title>
+        <description>&lt;p&gt;I’m going to demonstrate a useful tool that will help you speed up your process when creating Angular applications.&lt;/p&gt;
+
+&lt;p&gt;When working with mockups or one page templates like Bootstrap, the task of creating each individual component, and then cutting and pasting each template section, can become cumbersome. Imagine if you’re using Angular-cli, and for each component you have to issue a &lt;code class=&quot;highlighter-rouge&quot;&gt;ng g component my-new-component&lt;/code&gt; command plus cut and paste. Is there an easier way? Yes! That’s when the create-angular-components tool comes into action.&lt;/p&gt;
+
+&lt;h3 id=&quot;first-things-first&quot;&gt;First Things First&lt;/h3&gt;
+
+&lt;p&gt;For this demonstration, I’m assuming you already have angular-cli and/or have your Angular app installed. If not, please follow these &lt;a href=&quot;https://github.com/angular/angular-cli#generating-components-directives-pipes-and-services&quot;&gt;steps&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Once you have your application up and running, let’s install the create-angular-components tool:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;npm install -g create-angular-components
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;If you’ve followed the steps above accurately, your Angular application tree structure should be similar to my below structure.&lt;/p&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/img/cac-init-tree-structure.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;using-the-template-file&quot;&gt;Using the Template File&lt;/h3&gt;
+
+&lt;p&gt;Here’s a very simple example of a html mockup or one page template that I copied to the app folder:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;my-app
+  └── src
+      └── app
+          └── template.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Note: I decided to call it template.html instead of index.html so not to confuse the file with the same name on the src folder. But you can call it anything you want.&lt;/p&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/img/cac-templatefile.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;As you can see, it’s structured in these following sections:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;- nav&lt;/li&gt;
+  &lt;li&gt;- section
+    &lt;ul&gt;
+      &lt;li&gt;- about&lt;/li&gt;
+      &lt;li&gt;- portfolio content&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;- footer&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The above html elements are the parts I want to transform into components and subcomponents.&lt;/p&gt;
+
+&lt;h3 id=&quot;setting-up&quot;&gt;Setting Up&lt;/h3&gt;
+
+&lt;p&gt;Now, all we have to do is mark up the html elements we want to transform into components by adding &lt;code class=&quot;highlighter-rouge&quot;&gt;data-component=&quot;ComponentName&quot;&lt;/code&gt;. Don’t forget: use CamelCase!&lt;/p&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/img/cac-markedupfile.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;firing-up-the-command&quot;&gt;Firing Up the Command&lt;/h3&gt;
+
+&lt;p&gt;Once all elements are marked with data-component attributes, it’s time to issue the command.&lt;/p&gt;
+
+&lt;p&gt;In the command line, if you are not on your app’s root folder:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd &lt;/span&gt;my-app
+cac template.html
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;…drum roll…
+et voilá!&lt;/em&gt; If everything runs successfully you will see a message stating that 5 components were generated (3 components and 2 subcomponents) into &lt;code class=&quot;highlighter-rouge&quot;&gt;/Users/user-name/my-app/src/app&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Looking at the final result of your folder tree, you should have:&lt;/p&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/img/cac-treefinalresult.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Looking at &lt;code class=&quot;highlighter-rouge&quot;&gt;about.component.html&lt;/code&gt; you should see all the content of the ‘about’ from your template:&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;about&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&amp;gt;&lt;/span&gt;About me&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
+        &lt;span class=&quot;nt&quot;&gt;&amp;lt;p&amp;gt;&lt;/span&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. &lt;span class=&quot;nt&quot;&gt;&amp;lt;/p&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;This is your about.component.ts with the started code ready to be populated:&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kr&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'@angular/core'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;err&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;Component&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;selector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'about'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;templateUrl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'./about.component.html'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;styleUrls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'./about.component.css'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;span class=&quot;kr&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;kr&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AboutComponent&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;constructor&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Not only does it generate a folder with the name you’ve specified in the data-component attribute, including the TypeScript file, css file, html file with your content, but also the unit test file. Pretty cool, eh?&lt;/p&gt;
+
+&lt;p&gt;Also your template.html file remains intact. You can either remove it or redo your components whenever you want.&lt;/p&gt;
+
+&lt;p&gt;Well, that’s it for today. The repo for this demonstration can be found &lt;a href=&quot;https://github.com/bruno78/cac-app&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A big thank you to Alexey Okhrimenko (@aiboy on Github) for creating this great tool, and if you want to visit his github page or see the repo, please go &lt;a href=&quot;https://github.com/aiboy/create-angular-components&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 09 Sep 2017 00:00:00 -0400</pubDate>
+        <link>http://127.0.0.1:4000//2017/09/09/create-angular-components-faster.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2017/09/09/create-angular-components-faster.html</guid>
+        
+        <category>Angular-cli</category>
+        
+        <category>Angular</category>
+        
+        <category>create-angular-components</category>
+        
+        <category>TypeScript</category>
+        
+        <category>Components</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>The Rosemont NYC Bar</title>
+        <description>&lt;h3 id=&quot;introduction&quot;&gt;Introduction:&lt;/h3&gt;
+
+&lt;p&gt;The client wanted to rebrand their existing jazz bar to become a gay bar with jazz nights and so needed a new website that would convey the new direction. The rebranding, general look and functionality of the new website, would need to continue to appeal to the older jazz crowd while drawing new and younger gay patrons. They also wanted the new website to feature their new events schedule: Jazz performances on Tuesdays, drag shows on Wednesdays and Saturdays, Queer/Rock’n’Roll music on Fridays, and art shows on Sundays. In general, the idea was to create a “classy but edgy” new persona and website for the bar that would appeal to art loving patrons of both jazz and gay culture.&lt;/p&gt;
+
+&lt;h3 id=&quot;important-client-statements&quot;&gt;Important Client Statements:&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;Initially, “Owners were switching from a jazz bar to a mix jazz bar/queer friendly bar - keep it classy”&lt;/li&gt;
+  &lt;li&gt;During development, “Owners wanted to gradually end the jazz bar and become a gay bar”&lt;/li&gt;
+  &lt;li&gt;“They wanted a website to display the bar schedule, environment, people and backyard”&lt;/li&gt;
+  &lt;li&gt;“The current website had too much scrolling”&lt;/li&gt;
+  &lt;li&gt;“They wanted the drink menu displayed prominently on the front page”&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;problems&quot;&gt;Problems:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The website had too much scrolling on the front page.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;The client wanted to make sure people would come to the website and immediately see the - drink menu.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Information wasn’t being displayed clearly and correctly.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;img class=&quot;img-responsive&quot; style=&quot;width: 100%;&quot; src=&quot;/assets/img/old-rosemontnyc.png&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;old website (each block is what is displayed on the screen as you scroll down)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;possible-solutions&quot;&gt;Possible Solutions:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Transfer the music listings to a separate events page.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Put a detailed drink menu on the front page.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Distribute information in the proper locations.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Add a header containing the logo and hours.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Display content on a jumbotron, with drink menu on homepage, and a navigation bar to about and events.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Add a footer containing access to social-media, with bar phone number and email address.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;design-evolution&quot;&gt;Design Evolution:&lt;/h3&gt;
+
+&lt;p&gt;While waiting for new photographs of the bar to be supplied by the client, it was difficult to create a new design as the color palette of the old photographs were so distinct. Also, the burgundy, grey and brown colors of areas around the photographs, hindered the development of the new look. Once new photographs were taken, which I was eventually hired to do, going to the bar on a performance night with the laser lights and gay culture in full swing, the design for the new website finally started to take shape. The new photographs changed everything.&lt;/p&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/img/therosemontnyc-evolution.png&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;trying to distance from the old color palette&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Also during the design process, the manager changed his mind on the general concept, he no longer wanted to retain jazz nights but instead simply become a gay/queer friendly bar every night of the week. No more “classy”, instead he wanted the website to convey a “vibrant and fun” atmosphere.&lt;/p&gt;
+
+&lt;h3 id=&quot;final-result&quot;&gt;Final Result:&lt;/h3&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/img/therosemontnyc.png&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;the new website&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;When opening the website home page, using a regular desktop computer, users see a gif of laser lights behind a photographic slideshow on the right and a drink menu on the left. The home page gives one the sense of actually standing at the bar preparing to order a drink and watch a performance. The laser light gif in the background, photos of the bar and patrons on one side, and the drink menu on the other. The website’s menu bar is located under the slideshow, with links to Events, About and Contact pages. The footer contains links to social media outlets, contact information as well as the address with a link to the map. Both the header and footer have black backgrounds so they blend nicely into the blackness of the background laser light gif, tying everything together.&lt;/p&gt;
+
+&lt;p&gt;The events’ page has a full screen background photograph showing a drag queen during a performance, setting the mood of the page. An events api lays on top of the photograph, displaying all the events for the month.&lt;/p&gt;
+
+&lt;p&gt;The about’s page has another full screen photograph in the background showing a drag queen performing. Overlaying the background photo, is a brief description of the newly rebranded bar, on the right side, with a photograph slideshow on the right side, showing patrons happily mingling and ordering drinks and attending events. The about page clearly conveys the newly rebranded lively atmosphere.&lt;/p&gt;
+
+&lt;p&gt;The Contact’s page has the same background as the about’s page. It contains a contact form so users can put their info and send a message. There is also a map showing the location of the bar.&lt;/p&gt;
+
+&lt;div id=&quot;wrapper&quot;&gt;
+  &lt;img class=&quot;img-responsive&quot; src=&quot;/assets/img/therosemontnyc-admin.png&quot; /&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;em&gt;instructions to customize the content&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Lastly, I created a user friendly content management interface, for each page. The interface allows the client to change photos and written information as wanted, able to update events and keep the website as lively as the bar itself. This also minimized any ongoing website maintenance costs.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 10 Feb 2017 00:00:00 -0500</pubDate>
+        <link>http://127.0.0.1:4000//2017/02/10/the-rosemontnyc-process.html</link>
+        <guid isPermaLink="true">http://127.0.0.1:4000//2017/02/10/the-rosemontnyc-process.html</guid>
+        
+        <category>WordPress</category>
+        
+        <category>Bar</category>
+        
+        <category>Website</category>
+        
+        <category>PHP</category>
+        
+        <category>CMS</category>
+        
+        
+      </item>
     
       <item>
         <title>Offline First - No Internet connection and it's ok!</title>

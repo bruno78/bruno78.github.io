@@ -9,6 +9,8 @@ url: "http://127.0.0.1:4000/"
 collections:
   projects:
     output: true
+  other-projects:
+    output: true
 
 sass:
   sass_dir: _sass
