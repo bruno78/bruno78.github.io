@@ -25,4 +25,5 @@ Most of us can relate to kicking back on the couch and enjoying a movie with fri
 Popular Movies helps users discover popular and highly rated movies on the web. It displays a scrolling grid of movie trailers, launches a details screen whenever a particular movie is selected, allows users to save favorites, play trailers, and read user reviews.
 
 Google Play: https://play.google.com/store/apps/details?id=com.brunogtavares.popmovies
+
 More on github: https://github.com/bruno78/popular-movies-app-v2
