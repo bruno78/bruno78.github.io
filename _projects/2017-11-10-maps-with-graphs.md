@@ -2,7 +2,7 @@
 mod: 28
 title: Maps With Graphs
 category: Software Engineering, Object Oriented Programming, Algorithms, Data Structures, API
-featured: true
+featured: false
 column: 1
 published: true
 date: 2017-11-10
